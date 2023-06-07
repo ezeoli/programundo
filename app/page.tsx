@@ -2,11 +2,6 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-<<<<<<< HEAD
-    <main>
-      <h1> Programundo</h1>
-    </main>
-=======
     <>
       <header>
         <h2>Somos Programundo</h2>
@@ -21,6 +16,5 @@ export default function Home() {
         <h3>Somos programundo</h3>
       </footer>
     </>
->>>>>>> f30f0f34130016298a8aed578d964f8090e350e8
   )
 }
