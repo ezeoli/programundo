@@ -38,7 +38,7 @@ export default function Home() {
       
              <h1 className="text-4xl font-bold text-blue-800 text-center">Welcome to the Homepage</h1>
         <section id="about">
-        <h2 className="text-2xl font-bold">About us</h2>
+        <h2 className="text-2xl font-bold">About</h2>
         <Image
             src="/programundo2.jpg"
             width={500}
@@ -52,7 +52,7 @@ export default function Home() {
         </section>
 
         <section id="products">
-        <h2 className="text-2xl font-bold">Our Products</h2>
+        <h2 className="text-2xl font-bold">Products</h2>
         <Image
             src="/programundo4.jpg"
             width={500}
@@ -61,19 +61,6 @@ export default function Home() {
           />
           
           <p>This is the Products section.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ab amet quo autem quisquam officia earum illo, eaque repellat hic esse quos molestias veniam voluptates, eius at similique quibusdam aperiam?
-          </p>
-        </section>
-        <section id="clients">
-        <h2 className="text-2xl font-bold">Clients</h2>
-        <Image
-            src="/programundoLOGO.jpg"
-            width={500}
-            height={500}
-            alt="programundo"
-          />
-          
-          <p>This is the Clients section.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ab amet quo autem quisquam officia earum illo, eaque repellat hic esse quos molestias veniam voluptates, eius at similique quibusdam aperiam?
           </p>
         </section>

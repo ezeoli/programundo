@@ -38,7 +38,7 @@ export default function Home() {
       
              <h1 className="text-4xl font-bold text-blue-800 text-center">Welcome to the Homepage</h1>
         <section id="about">
-        <h2 className="text-2xl font-bold">About us</h2>
+        <h2 className="text-2xl font-bold">About</h2>
         <Image
             src="/programundo2.jpg"
             width={500}
