@@ -35,26 +35,19 @@ export default function Home() {
     </header>
     <main>
       
-      
-             <h1 className="text-4xl font-bold text-blue-800">Welcome to the Homepage</h1>
-        <section id="about">
-        <Image
-            src="/programundo2.jpg"
+      <Image
+            src="/programundo.jpg"
             width={500}
             height={500}
             alt="programundo"
           />
+             <h1 className="text-4xl font-bold text-blue-800">Welcome to the Homepage</h1>
+        <section id="about">
           <h2 className="text-2xl font-bold">About</h2>
           <p>This is the About section.</p>
         </section>
 
         <section id="products">
-        <Image
-            src="/programundo4.jpg"
-            width={500}
-            height={500}
-            alt="programundo"
-          />
           <h2 className="text-2xl font-bold">Products</h2>
           <p>This is the Products section.</p>
         </section>
