@@ -64,8 +64,7 @@ export default function Home() {
           <p>This is the Contact section.</p>
         </section>
     </main>
-    <footer  >
-       <h1 className="text-blue-800 text-center">We are the next generation of code solutions</h1>  </footer>
+    <footer> We are the next generation </footer>
     <Image
             src="/programundo3.jpg"
             width={500}

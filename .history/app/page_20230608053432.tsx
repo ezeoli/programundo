@@ -65,7 +65,7 @@ export default function Home() {
         </section>
     </main>
     <footer  >
-       <h1 className="text-blue-800 text-center">We are the next generation of code solutions</h1>  </footer>
+       <p text-blue-800 text-center>We are the next generation of code solutions</p>  </footer>
     <Image
             src="/programundo3.jpg"
             width={500}
