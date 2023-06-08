@@ -12,7 +12,7 @@ export default function Home() {
             <header>
               <nav className='flex  bg-gray-400 h-16'> 
                   <Image
-                    src="/programundoLOGO.png"
+                    src="/LOGO.png"
                     width={100}
                     height={100}
                     alt="programundo"
