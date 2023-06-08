@@ -38,28 +38,24 @@ export default function Home() {
       
              <h1 className="text-4xl font-bold text-blue-800 text-center">Welcome to the Homepage</h1>
         <section id="about">
-        <h2 className="text-2xl font-bold">About</h2>
         <Image
             src="/programundo2.jpg"
             width={500}
             height={500}
             alt="programundo"
           />
-          
-          <p>This is the About section.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem rerum eveniet fuga praesentium asperiores eos deleniti doloremque quibusdam consectetur sunt similique tempora architecto obcaecati maiores, tempore natus aperiam ipsum totam.
-          </p>
+          <h2 className="text-2xl font-bold">About</h2>
+          <p>This is the About section.</p>
         </section>
 
         <section id="products">
-        <h2 className="text-2xl font-bold">Products</h2>
         <Image
             src="/programundo4.jpg"
             width={500}
             height={500}
             alt="programundo"
           />
-          
+          <h2 className="text-2xl font-bold">Products</h2>
           <p>This is the Products section.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ab amet quo autem quisquam officia earum illo, eaque repellat hic esse quos molestias veniam voluptates, eius at similique quibusdam aperiam?
           </p>
@@ -67,12 +63,6 @@ export default function Home() {
 
         <section id="contact">
           <h2 className="text-2xl font-bold">Contact</h2>
-          <Image
-            src="/programundo.jpg"
-            width={500}
-            height={500}
-            alt="programundo"
-          />
           <p>This is the Contact section.
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id dicta dolore, facere quisquam aliquid alias nostrum qui, aut tenetur nam fuga provident minima enim magni cupiditate excepturi modi, hic accusantium.
           </p>
