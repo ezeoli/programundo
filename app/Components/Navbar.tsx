@@ -7,7 +7,7 @@ type Props = {};
 
 export default function Navbar({}: Props) {
   return (
-    <nav className="flex  bg-gray-400 h-16">
+    <nav className="flex bg-gray-400 h-16">
       <Link href={"/"}>
         <Image
           src="/LOGO.png"
