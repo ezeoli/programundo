@@ -91,7 +91,7 @@ export default function Home() {
                   width={500}
                   height={500}
                   alt="programundo"
-                  className=" rounded "
+                  className= " rounded   "
                   style={{ display: 'block', margin: '0 auto' }}
                 />
             </footer>
