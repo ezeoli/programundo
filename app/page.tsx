@@ -1,25 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import Navbar from "./Components/Navbar";
 
 export default function Home() {
   return (
     <>
       <header>
-        <nav className="flex  bg-gray-400 h-16">
-          <Image src="/LOGO.png" width={70} height={70} alt="programundo" />
-          <Link href="/aboutUs" className="flex-auto text-blue-800 p-2">
-            About us
-          </Link>
-          <Link href="/products" className="flex-auto text-blue-800 p-2">
-            Our products
-          </Link>
-          <Link href="/clients" className="flex-auto text-blue-800 p-2">
-            Clients
-          </Link>
-          <Link href="/contact" className="flex-auto text-blue-800 p-2">
-            Contact
-          </Link>
-        </nav>
+        <Navbar/>
       </header>
       <main>
         <h1 className="text-4xl font-bold text-blue-800 text-center">
