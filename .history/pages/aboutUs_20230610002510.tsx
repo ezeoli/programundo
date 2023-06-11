@@ -10,8 +10,6 @@ export default function AboutUs({}: Props) {
   return (
     <>
       <Navbar />
-
-      
       <section id="about">
         <h2 className="text-2xl font-bold">About us</h2>
 
