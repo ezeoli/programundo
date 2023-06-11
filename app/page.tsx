@@ -46,7 +46,7 @@ export default function Home() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full"
+          className="flex items-center justify-center bg-green-500 hover:bg-green-500 text-white font-bold py-4 px-4 rounded-full"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
