@@ -10,7 +10,7 @@ export default function Navbar({}: Props) {
     <nav className="flex bg-gray-400 h-16">
       <Link href={"/"}>
         <Image
-          src="/Logo.png"
+          src="/LOGO.png"
           width={70}
           height={70}
           className="p-2"
