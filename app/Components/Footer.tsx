@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import "../globals.css";
+import Link from 'next/link';
 
 type Props = {}
 
@@ -18,6 +19,6 @@ export default function Footer({}: Props) {
           className=" rounded "
           style={{ display: "block", margin: "0 auto" }}
           />
-          </>
-    )
+    </>
+  )
 }
