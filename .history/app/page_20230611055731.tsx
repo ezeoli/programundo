@@ -46,11 +46,11 @@ export default function Home() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full"
+          className="flex items-center justify-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <FaWhatsapp className="text-white text-4xl" />
+          <FaWhatsapp className="text-white text-2xl" />
           {isHovered && (
             <span className="ml-2 hidden md:inline-block">Call us</span>
           )}
