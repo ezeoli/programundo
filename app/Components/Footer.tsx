@@ -36,7 +36,7 @@ export default function Footer({}: Props) {
                   <li className="mb-4">
                     <a
                       href={l.href}
-                      className="inline-block text-gray-500 hover:text-tertiary font-medium"
+                      className="inline-block text-gray-500 hover:text-primary font-medium"
                     >
                       {l.name}
                     </a>
@@ -56,7 +56,7 @@ export default function Footer({}: Props) {
                     <a
                       href={l.href}
                       aria-current="page"
-                      className="inline-block text-gray-500 hover:text-tertiary font-medium"
+                      className="inline-block text-gray-500 hover:text-primary font-medium"
                     >
                       {l.name}
                     </a>
