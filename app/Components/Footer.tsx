@@ -3,6 +3,7 @@ import Image from "next/image";
 import "../globals.css";
 import Link from "next/link";
 import footer from "../Data/Footer.json";
+import Newsletter from "./Newsletter";
 
 type Props = {};
 
@@ -35,7 +36,7 @@ export default function Footer({}: Props) {
                   <li className="mb-4">
                     <a
                       href={l.href}
-                      className="inline-block text-gray-500 hover:text-[#BB2649] font-medium"
+                      className="inline-block text-gray-500 hover:text-tertiary font-medium"
                     >
                       {l.name}
                     </a>
@@ -55,7 +56,7 @@ export default function Footer({}: Props) {
                     <a
                       href={l.href}
                       aria-current="page"
-                      className="inline-block text-gray-500 hover:text-[#BB2649] font-medium nuxt-link-exact-active nuxt-link-active"
+                      className="inline-block text-gray-500 hover:text-tertiary font-medium"
                     >
                       {l.name}
                     </a>
@@ -66,25 +67,7 @@ export default function Footer({}: Props) {
           </div>{" "}
           
           {/*  Newsletter  */}
-          <div className="w-full md:w-1/3 lg:w-4/12 px-4">
-            <h3 className="mb-5 text-lg font-bold text-gray-900">Newsletter</h3>{" "}
-            <div className="flex flex-wrap">
-              <div className="w-full lg:flex-1 py-1 lg:py-0 lg:mr-3">
-                <input
-                  placeholder="Tu email"
-                  className="px-3 w-full h-12 text-gray-900 outline-none placeholder-gray-500 border border-gray-200 focus:ring-2 focus:ring-[#BB2649] focus:ring-opacity-50 rounded-lg shadow-xsm"
-                />
-              </div>{" "}
-              <div className="w-full lg:w-auto py-1 lg:py-0">
-                <a
-                  href="#"
-                  className="inline-block py-4 px-5 w-full leading-4 text-white font-medium text-center bg-[#BB2649] hover:bg-[#BB2649] focus:ring-2 focus:ring-[#BB2649] focus:ring-opacity-50 rounded-md shadow-sm"
-                >
-                  Suscribirse
-                </a>
-              </div>
-            </div>
-          </div>
+         <Newsletter/>
         </div>
       </div>
     </>
