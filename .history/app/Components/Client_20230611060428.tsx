@@ -24,5 +24,4 @@ export default function Client({}: Props) {
     </p>
   </section>
   )
-  
 }
