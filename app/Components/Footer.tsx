@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import "../globals.css";
 import Link from "next/link";
+import footer from "../Data/Footer.json";
 
 type Props = {};
 
@@ -13,116 +14,58 @@ export default function Footer({}: Props) {
           <div className="w-full md:w-1/2 lg:w-4/12 px-4 mb-16 lg:mb-0">
             <a href="#" className="inline-block mb-4">
               <Image
-                src="/Logo.png"
+                src={footer.logo}
                 width={150}
                 height={150}
                 alt=""
-                className="rounded"
+                className="rounded mx-8"
               />
-            </a>{" "}
-            <p className="text-base md:text-lg text-gray-500 font-medium lg:w-64 pl-2">
-              Hacemos realidad tu proyecto.
+            </a>
+            <p className="text-base md:text-lg text-black font-medium lg:w-64 pl-2">
+              {footer.descriptionLogo}
             </p>
-          </div>{" "}
+          </div>
+          
+          {/* Links */}
           <div className="w-full md:w-1/4 lg:w-2/12 px-4 mb-16 lg:mb-0">
             <h3 className="mb-5 text-lg font-bold text-gray-900">Links</h3>{" "}
             <ul>
-              <li className="mb-4">
-                <a
-                  href="/#nosotros"
-                  className="inline-block text-gray-500 hover:text-[#BB2649] font-medium"
-                >
-                  Nosotros
-                </a>
-              </li>{" "}
-              <li className="mb-4">
-                <a
-                  href="/#servicios"
-                  className="inline-block text-gray-500 hover:text-[#BB2649] font-medium"
-                >
-                  Servicios
-                </a>
-              </li>{" "}
-              <li className="mb-4">
-                <a
-                  href="/portfolio/"
-                  className="inline-block text-gray-500 hover:text-[#BB2649] font-medium"
-                >
-                  Portfolio
-                </a>
-              </li>{" "}
-              <li className="mb-4">
-                <a
-                  href="/#blog"
-                  className="inline-block text-gray-500 hover:text-[#BB2649] font-medium"
-                >
-                  Blog
-                </a>
-              </li>{" "}
-              <li className="mb-4">
-                <a
-                  href="/contacto/"
-                  className="inline-block text-gray-500 hover:text-[#BB2649] font-medium"
-                >
-                  Contacto
-                </a>
-              </li>
+              {footer.links.map((l) => (
+                <>
+                  <li className="mb-4">
+                    <a
+                      href={l.href}
+                      className="inline-block text-gray-500 hover:text-[#BB2649] font-medium"
+                    >
+                      {l.name}
+                    </a>
+                  </li>
+                </>
+              ))}
             </ul>
-          </div>{" "}
+          </div>
+
+          {/* services */}
           <div className="w-full md:w-1/4 lg:w-2/12 px-4 mb-16 lg:mb-0">
-            <h3 className="mb-5 text-lg font-bold text-gray-900">Servicios</h3>{" "}
+            <h3 className="mb-5 text-lg font-bold text-gray-900">Services</h3>{" "}
             <ul>
-              <li className="mb-4">
-                <a
-                  href="/sitios-web/"
-                  aria-current="page"
-                  className="inline-block text-gray-500 hover:text-[#BB2649] font-medium nuxt-link-exact-active nuxt-link-active"
-                >
-                  Sitios Web
-                </a>
-              </li>{" "}
-              <li className="mb-4">
-                <a
-                  href="/app-y-software-a-medida/"
-                  className="inline-block text-gray-500 hover:text-[#BB2649] font-medium"
-                >
-                  App y Software a medida
-                </a>
-              </li>{" "}
-              <li className="mb-4">
-                <a
-                  href="/seo/"
-                  className="inline-block text-gray-500 hover:text-[#BB2649] font-medium"
-                >
-                  Posicionamiento SEO
-                </a>
-              </li>{" "}
-              <li className="mb-4">
-                <a
-                  href="/ux-ui/"
-                  className="inline-block text-gray-500 hover:text-[#BB2649] font-medium"
-                >
-                  UX/UI
-                </a>
-              </li>{" "}
-              <li className="mb-4">
-                <a
-                  href="/ecommerce/"
-                  className="inline-block text-gray-500 hover:text-[#BB2649] font-medium"
-                >
-                  Ecommerce
-                </a>
-              </li>{" "}
-              <li className="mb-4">
-                <a
-                  href="/software-de-gestion/"
-                  className="inline-block text-gray-500 hover:text-[#BB2649] font-medium"
-                >
-                  Software Gestión
-                </a>
-              </li>
+              {footer.services.map((l) => (
+                <>
+                  <li className="mb-4">
+                    <a
+                      href={l.href}
+                      aria-current="page"
+                      className="inline-block text-gray-500 hover:text-[#BB2649] font-medium nuxt-link-exact-active nuxt-link-active"
+                    >
+                      {l.name}
+                    </a>
+                  </li>
+                </>
+              ))}
             </ul>
           </div>{" "}
+          
+          {/*  Newsletter  */}
           <div className="w-full md:w-1/3 lg:w-4/12 px-4">
             <h3 className="mb-5 text-lg font-bold text-gray-900">Newsletter</h3>{" "}
             <div className="flex flex-wrap">
