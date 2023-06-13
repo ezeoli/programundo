@@ -10,12 +10,13 @@ export default function About({}: Props) {
     <section id="about">
       <h2 className="text-4xl font-bold p-5">About us</h2>
 
-      <div className="flex">
+      <div className="sm:flex">
         <Image
-          className="rounded-md mx-5"
+          className="rounded-md mx-5 w-1/3 h-auto"
           src="/programundo2.jpg"
-          width={400}
-          height={400}
+          width="0"
+          height="0"
+          sizes="100vw"
           alt="programundo"
         />
 

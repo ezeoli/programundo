@@ -9,6 +9,7 @@ export default function Newsletter({}: Props) {
     <div className="flex flex-wrap">
       <div className="w-full lg:flex-1 py-1 lg:py-0 lg:mr-3">
         <input
+          name="newletter"
           placeholder="Tu email"
           className="px-3 w-full h-12 text-gray-900 outline-none placeholder-gray-500 border border-gray-200 focus:ring-2 focus:ring-primary focus:ring-primary rounded-lg shadow-xsm"
         />
