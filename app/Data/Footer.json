@@ -2,7 +2,7 @@
   "logo": "/Logo.png",
   "descriptionLogo": "making your projects a reality.",
   "links": [
-    { "href": "/#aboutUs", "name": "About us" },
+    { "href": "/#about", "name": "About us" },
     { "href": "/products", "name": "Products" },
     { "href": "/#clients", "name": "Client" },
     { "href": "/contact", "name": "Contact"}

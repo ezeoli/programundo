@@ -20,7 +20,7 @@ module.exports = {
         warning: "#ffc409",
         danger: "#eb445a",
         medium: "#92949c",
-        light: "#f4f5f8",
+        light: "#dfd9f9",
       },
     },
   },
