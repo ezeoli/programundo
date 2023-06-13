@@ -13,7 +13,7 @@ export default function Navbar({}: Props) {
           src="/Logo.png"
           width="0"
       height="0"
-      sizes="100vw"
+      sizes="1000vw"
       className="w-full h-auto p-2" 
           
           alt="programundo"
