@@ -10,7 +10,7 @@ type Props = {};
 export default function Footer({}: Props) {
   return (
     <>
-      <div id="image_footer" className="px-5">
+      <div id="image_footer" className="bg-light px-5">
         <div className="flex flex-wrap pt-24 pb-12 -mx-4">
           <div className="w-full md:w-1/2 lg:w-4/12 px-4 mb-16 lg:mb-0">
             <a href="/" className="inline-block mb-4">
