@@ -5,14 +5,14 @@
     { "href": "/#aboutUs", "name": "About us" },
     { "href": "/products", "name": "Products" },
     { "href": "/#clients", "name": "Client" },
-    { "href": "/contact", "name": "Contact"}
+    { "href": "/contact", "name": "Contact" }
   ],
   "services": [
-    { "href": "", "name": "Sitios Web"},
+    { "href": "", "name": "Sitios Web" },
     { "href": "", "name": "App y Software a medida" },
     { "href": "", "name": "Posicionamiento SEO" },
     { "href": "", "name": "UX/UI" },
-    { "href": "", "name": "Ecommerce"},
+    { "href": "", "name": "Ecommerce" },
     { "href": "", "name": "Software Gestión" }
   ]
 }

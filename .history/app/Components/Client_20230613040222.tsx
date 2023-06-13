@@ -14,7 +14,7 @@ export default function Client({}: Props) {
       width="0"
       height="0"
       sizes="100vw"
-      className="w-1/2 h-auto" 
+    className="w-1/2 h-auto" 
       alt="programundo"
     />
 

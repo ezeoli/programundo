@@ -1,0 +1,18 @@
+{
+  "logo": "/Logo.png",
+  "descriptionLogo": "making your projects a reality.",
+  "links": [
+    { "href": "/#aboutUs", "name": "About us" ,"id":"1"},
+    { "href": "/products", "name": "Products","id":"2" },
+    { "href": "/#clients", "name": "Client" ,"id":"3"},
+    { "href": "/contact", "name": "Contact","id":"4" }
+  ],
+  "services": [
+    { "href": "", "name": "Sitios Web","id":"15" },
+    { "href": "", "name": "App y Software a medida","id":"6" },
+    { "href": "", "name": "Posicionamiento SEO","id":"7" },
+    { "href": "", "name": "UX/UI","id":"10" },
+    { "href": "", "name": "Ecommerce","id":"8" },
+    { "href": "", "name": "Software Gestión","id":"9" }
+  ]
+}

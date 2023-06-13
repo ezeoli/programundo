@@ -14,7 +14,7 @@ export default function Navbar({}: Props) {
           width="0"
       height="0"
       sizes="100vw"
-      className="w-1/2 h-auto p-2" 
+      className="w-1/8 h-auto p-2" 
           
           alt="programundo"
         />

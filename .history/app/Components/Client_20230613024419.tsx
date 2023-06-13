@@ -8,13 +8,12 @@ type Props = {}
 export default function Client({}: Props) {
   return (
     <section id="clients">
-    <h2 className="text-2xl font-bold ">Clients</h2>
+    <h2 className="text-2xl font-bold">Clients</h2>
     <Image
       src="/programundoLOGO.jpg"
-      width="0"
-      height="0"
-      sizes="100vw"
-      className="w-1/2 h-auto" 
+      width={500}
+      height={500}
+      
       alt="programundo"
     />
 

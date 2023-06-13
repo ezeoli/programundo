@@ -10,10 +10,8 @@ export default function Products({}: Props) {
     <h2 className="text-2xl font-bold">Our Products</h2>
     <Image
       src="/programundo4.jpg"
-      width="0"
-      height="0"
-      sizes="100vw"
-      className="w-1/2 h-auto" 
+      width={500}
+      height={500}
       alt="programundo"
     />
 

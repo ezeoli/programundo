@@ -11,11 +11,11 @@ export default function Navbar({}: Props) {
       <Link href={"/"}>
         <Image
           src="/Logo.png"
-          width="0"
-      height="0"
-      sizes="100vw"
-      className="w-1/2 h-auto p-2" 
-          
+          width={70}
+          height={70}
+          className="p-2"
+          layout="responsive"
+          objectFit="contain"
           alt="programundo"
         />
       </Link>

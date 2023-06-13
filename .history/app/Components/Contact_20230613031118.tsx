@@ -14,10 +14,10 @@ export default function Contact() {
           <h2 className='text-2xl font-bold p-5'>Contact us!</h2>
           <form onSubmit={handleSubmit} id="contact_form" className="flex flex-col p-5 mx-5 space-y-2 border border-gray-600 rounded-md w-6/12">
           <label htmlFor="Name" className="flex-col">Name </label>
-            <input id="Name" type="text" name="Name" required className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1 w-full" placeholder="Your Name" autoComplete="Your Name" />
+            <input id="Name" type="text" name="Name" required className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1 w-full" placeholder="Your Name" />
 
             <label htmlFor="email" className="flex-col">Email Address </label>
-            <input id="email" type="email" name="email"   className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1 w-full" placeholder="you@example.com" autoComplete="email"  />
+            <input id="email" type="email" name="email" className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1 w-full" placeholder="you@example.com" />
             
             <ValidationError 
               prefix="Email" 
