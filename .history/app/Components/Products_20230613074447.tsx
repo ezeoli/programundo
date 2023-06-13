@@ -18,14 +18,13 @@ export default function Products({}: Props) {
       className="rounded-md mx-5 w-1/2 h-auto" 
       alt="programundo"
     />
-    <div>
-    <p className="p-10 m-10">
+
+    <p p-10 m-10>
       This is the Products section. Lorem ipsum dolor sit amet consectetur
       adipisicing elit. Iste ab amet quo autem quisquam officia earum
       illo, eaque repellat hic esse quos molestias veniam voluptates, eius
       at similique quibusdam aperiam?
     </p>
-    </div>
     </div>
   </section>
   )

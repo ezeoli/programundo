@@ -8,7 +8,7 @@ type Props = {}
 export default function Client({}: Props) {
   return (
     <section id="clients">
-    <h2 className="text-4xl font-bold p-5">Clients</h2>
+    <h2 className="text-2xl font-bold ">Clients</h2>
     
     <div className="sm:flex">
     <Image
