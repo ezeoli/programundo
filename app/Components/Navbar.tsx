@@ -1,36 +1,57 @@
 import React from "react";
 import Image from "next/image";
-import "../globals.css";
 import Link from "next/link";
+import "../globals.css";
+import { useState } from "react";
 
 type Props = {};
 
 export default function Navbar({}: Props) {
+  const [navbar, setNavbar] = useState (false);
+
+  const links = <div className={`md:block ${navbar?'block':'hidden'}`} >
+                  <ul className="md:h-auto md:flex cursor-pointer h-screen ">
+                      <Link href="/#aboutUs" onClick={()=>setNavbar(!navbar)}>
+                        <li className="text-xl px-5 text-center py-3 hover:bg-white md:hover:bg-transparent hover:text-black">About us</li>
+                      </Link>
+                      <Link href="/products" onClick={()=>setNavbar(!navbar)}>
+                        <li className="text-xl px-5 text-center py-3 hover:bg-white md:hover:bg-transparent hover:text-black">Our products</li>
+                      </Link>
+                      <Link href="/#clients" onClick={()=>setNavbar(!navbar)}>
+                        <li className="text-xl px-5 text-center py-3 hover:bg-white md:hover:bg-transparent hover:text-black">Clients</li>
+                      </Link>
+                      <Link href="/contact" onClick={()=>setNavbar(!navbar)}>
+                        <li className="text-xl px-5 text-center py-3 hover:bg-white md:hover:bg-transparent hover:text-black">Contact</li>
+                      </Link>
+                  </ul>
+                </div>;
+
   return (
-    <nav className="flex bg-gray-400 h-16">
-      <Link href={"/"}>
-        <Image
-          src="/Logo.png"
-          width="0"
-      height="0"
-      sizes="100vw"
-      className="w-1/2 h-auto p-2" 
-          
-          alt="programundo"
-        />
-      </Link>
-      <Link href="/#aboutUs" className="flex-auto text-blue-800 ml-20 p-5">
-        About us
-      </Link>
-      <Link href="/products" className="flex-auto text-blue-800 p-5">
-        Our products
-      </Link>
-      <Link href="/#clients" className="flex-auto text-blue-800 p-5">
-        Clients
-      </Link>
-      <Link href="/contact" className="flex-auto text-blue-800 p-5">
-        Contact
-      </Link>
+    <nav className="w-full bg-gray-500 p-4 text-white">
+      <div className="flex justify-between md:flex md:align-middle">
+          <div className="flex items-center justify-left">
+                <Link href={"/"}>
+                  <Image
+                    src="/Logo.png"
+                    width={60}
+                    height={60}
+                    sizes="100vw"
+                    alt="programundo"
+                  />
+                </Link>
+          </div>
+          <div className="md:hidden">
+            <button className="rounded" onClick={()=>setNavbar(!navbar)}>
+              {navbar ? (
+                <Image src="/Close.png" width={50} height={50} alt="close icon button"/>
+              ):(
+                <Image src="/Menu.png " width={50} height={50} alt="menu icon button"/>
+              )}
+            </button>
+          </div>
+          {navbar?"":links}
+      </div>
+      {navbar?links:""}
     </nav>
   );
 }
