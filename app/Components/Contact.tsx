@@ -15,10 +15,10 @@ export default function Contact() {
           <h2 className='text-2xl font-bold p-5'>{contact.subtitle}</h2>
           <form onSubmit={handleSubmit} id="contact_form" className="flex flex-col p-5 mx-5 space-y-2 border border-gray-600 rounded-md w-6/12">
           <label htmlFor="Name" className="flex-col">{contact.nameForm}</label>
-            <input id="Name" type="text" name="Name" required className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1 w-full" placeholder="Your Name" autoComplete="Your Name" />
+            <input id="Name" type="text" name="Name" required className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1 w-full" placeholder={contact.nameFormPlaceholder} autoComplete="Your Name" />
 
             <label htmlFor="email" className="flex-col">{contact.emailForm}</label>
-            <input id="email" type="email" name="email"   className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1 w-full" placeholder="you@example.com" autoComplete="email"  />
+            <input id="email" type="email" name="email"   className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1 w-full" placeholder={contact.emailFormPlaceholder} autoComplete="email"  />
             
             <ValidationError 
               prefix="Email" 
@@ -26,7 +26,7 @@ export default function Contact() {
               errors={state.errors}
             />
             <label htmlFor="message" className="flex-col ">{contact.messageForm}</label>
-            <textarea id="message" name="message" className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1 w-full" placeholder="Your Message" />
+            <textarea id="message" name="message" className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1 w-full" placeholder={contact.messageFormPlaceholder} />
             <ValidationError 
               prefix="Message" 
               field="message"
