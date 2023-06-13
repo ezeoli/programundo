@@ -14,13 +14,13 @@ export default function Navbar({}: Props) {
                       <Link href="/#aboutUs" onClick={()=>setNavbar(!navbar)}>
                         <li className="text-xl px-5 text-center py-3 hover:bg-white md:hover:bg-transparent hover:text-black">About us</li>
                       </Link>
-                      <Link href="/products" onClick={()=>setNavbar(!navbar)}>
+                      <Link href="/#products" onClick={()=>setNavbar(!navbar)}>
                         <li className="text-xl px-5 text-center py-3 hover:bg-white md:hover:bg-transparent hover:text-black">Our products</li>
                       </Link>
                       <Link href="/#clients" onClick={()=>setNavbar(!navbar)}>
                         <li className="text-xl px-5 text-center py-3 hover:bg-white md:hover:bg-transparent hover:text-black">Clients</li>
                       </Link>
-                      <Link href="/contact" onClick={()=>setNavbar(!navbar)}>
+                      <Link href="/#contact" onClick={()=>setNavbar(!navbar)}>
                         <li className="text-xl px-5 text-center py-3 hover:bg-white md:hover:bg-transparent hover:text-black">Contact</li>
                       </Link>
                   </ul>
