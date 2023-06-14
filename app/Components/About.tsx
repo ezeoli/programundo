@@ -25,7 +25,7 @@ export default function About({}: Props) {
           <p className="p-10 m-10">
             {about.description}
           </p>
-          <Link href={"/contact"}>
+          <Link href={"#Contact"}>
             <button className="bg-primary hover:bg-secondary text-white font-bold py-2 px-10 rounded-md flex m-20">
              {about.buttonContact}
             </button>

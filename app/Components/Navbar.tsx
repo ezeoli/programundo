@@ -52,7 +52,7 @@ export default function Navbar({}: Props) {
                         <Link href="#clients" onClick={()=>setNavbar(!navbar)}>Clients</Link>
                       </li>
                       <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
-                      <Link href="#contact" onClick={()=>setNavbar(!navbar)}>Contact</Link>
+                      <Link href="#Contact" onClick={()=>setNavbar(!navbar)}>Contact</Link>
                       </li>
                     </ul>
               </div>
