@@ -5,12 +5,13 @@ import "../globals.css";
 import contact from '../Data/contact.json'
 
 export default function Contact() {
+  
     const [state, handleSubmit] = useForm("xnqybkro");
     if (state.succeeded) {
         return <p>Thanks for Send your!</p>;
     }
     return (
-        <>
+      <section id="Contact">
           <h1 className='text-4xl font-bold p-5' >{contact.title}</h1>
           <h2 className='text-2xl font-bold p-5'>{contact.subtitle}</h2>
           <form onSubmit={handleSubmit} id="contact_form" className="flex flex-col p-5 mx-5 space-y-2 border border-gray-600 rounded-md w-6/12">
@@ -35,7 +36,7 @@ export default function Contact() {
             <div className=" grid justify-items-end">
               <button type="submit" disabled={state.submitting} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md flex content-center w-fit">{contact.buttonSubmit}</button>
             </div>
-        </form>
-      </>
+          </form>
+        </section>
     );
   }
