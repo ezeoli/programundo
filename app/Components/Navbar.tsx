@@ -45,7 +45,7 @@ export default function Navbar({}: Props) {
               {navbar ? (
                 <Image src="/Close.png" width={50} height={50} alt="close icon button"/>
               ):(
-                <Image src="/Menu.png " width={50} height={50} alt="menu icon button"/>
+                <Image src="/Menu.png" width={50} height={50} alt="menu icon button"/>
               )}
             </button>
           </div>
