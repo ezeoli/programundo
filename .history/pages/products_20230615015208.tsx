@@ -1,57 +1,58 @@
-import "../app/globals.css";
-import { useState, useEffect } from "react";
+import React , { useEffect } from "react";
 import Image from "next/image";
+import "../app/globals.css";
+import Link from "next/link";
 import Navbar from "@/app/Components/Navbar";
 
-export default function Products() {
-  const images = [
-    
-    "/programundo2.jpg",
-    "/programundo3.jpg",
-    "/programundo4.jpg",
-  ];
+type Props = {};
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+export default function Products({}: Props) {
 
   useEffect(() => {
-    let intervalId: NodeJS.Timeout | null = null;
+    const carousel = document.querySelector("#default-carousel");
+    const carouselItems = carousel?.querySelectorAll("[data-carousel-item]");
+    const prevButton = carousel?.querySelector("[data-carousel-prev]");
+    const nextButton = carousel?.querySelector("[data-carousel-next]");
+    let currentIndex = 0;
 
-    const startAutoRotate = () => {
-      intervalId = setInterval(nextSlide, 5000); // Cambia el valor '5000' al intervalo deseado en milisegundos
+    const showSlide = (index: number) => {
+      carouselItems?.forEach((item) => {
+        item.classList.add("hidden");
+      });
+
+      carouselItems?.[index]?.classList.remove("hidden");
     };
 
-    const stopAutoRotate = () => {
-      if (intervalId) {
-        clearInterval(intervalId);
-        intervalId = null;
+    const goToSlide = (index: number) => {
+      if (index < 0) {
+        currentIndex = carouselItems.length - 1;
+      } else if (index >= carouselItems.length) {
+        currentIndex = 0;
+      } else {
+        currentIndex = index;
       }
+
+      showSlide(currentIndex);
     };
 
-    startAutoRotate();
+    const nextSlide = () => {
+      goToSlide(currentIndex + 1);
+    };
 
-    const carousel = document.querySelector("[data-carousel]");
-    carousel?.addEventListener("mouseenter", stopAutoRotate);
-    carousel?.addEventListener("mouseleave", startAutoRotate);
+    const prevSlide = () => {
+      goToSlide(currentIndex - 1);
+    };
+
+    nextButton?.addEventListener("click", nextSlide);
+    prevButton?.addEventListener("click", prevSlide);
+
+    showSlide(currentIndex);
 
     return () => {
-      stopAutoRotate();
+      nextButton?.removeEventListener("click", nextSlide);
+      prevButton?.removeEventListener("click", prevSlide);
     };
   }, []);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
-  const goToSlide = (index: number) => {
-    setCurrentIndex(index);
-  };
-
   return (
     <>
       <Navbar />
@@ -150,7 +151,7 @@ export default function Products() {
       <section id="products">
         <h2 className="text-2xl font-bold">Our Products</h2>
         <Image
-          src={"/programundo4.jpg"}
+          src="/programundo4.jpg"
           width={500}
           height={500}
           priority={true}
@@ -171,77 +172,135 @@ export default function Products() {
         data-carousel="slide"
       >
         <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-          {images.map((image, index) => (
+          <div
+            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            data-carousel-item
+          >
             <Image
-              key={index}
-              src={image}
+              src="/programundo3.jpg"
               width={500}
               height={500}
-              alt="programundo"
-              className={`absolute top-0 left-0 w-full h-full transition-opacity duration-500 ${
-                index === currentIndex ? "opacity-100" : "opacity-0"
-              }`}
+              className="object-cover"
+              alt="..."
             />
-          ))}
-        </div>
+          </div>
 
-        <div className="absolute bottom-0 left-0 w-full h-8 bg-gray-900 bg-opacity-50">
-          <ul className="flex justify-center space-x-2">
-            {images.map((_, index) => (
-              <li
-                key={index}
-                className={`w-4 h-4 rounded-full cursor-pointer ${
-                  index === currentIndex ? "bg-white" : "bg-gray-300"
-                }`}
-                onClick={() => goToSlide(index)}
-              ></li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="absolute top-1/2 left-2 transform -translate-y-1/2">
-          <button
-            className="p-2 bg-gray-900 bg-opacity-50 text-white rounded-full focus:outline-none"
-            onClick={prevSlide}
+          <div
+            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            data-carousel-item
           >
+            <Image
+              src="/programundo4.jpg"
+              width={500}
+              height={500}
+              priority={true}
+              className="object-cover"
+              alt="..."
+            />
+          </div>
+
+          <div
+            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            data-carousel-item
+          >
+            <Image
+              src="/programundo2.jpg"
+              width={500}
+              height={500}
+              className="object-cover"
+              alt="..."
+            />
+          </div>
+
+          
+        </div>
+
+        <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+          <button
+            type="button"
+            className="w-3 h-3 rounded-full"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            className="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            className="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            className="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 4"
+            data-carousel-slide-to="3"
+          ></button>
+          <button
+            type="button"
+            className="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 5"
+            data-carousel-slide-to="4"
+          ></button>
+        </div>
+
+        <button
+          type="button"
+          className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-black dark:group-focus:ring-gray-800/70 group-focus:outline-none">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              className="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-gray-800"
               fill="none"
-              viewBox="0 0 24 24"
               stroke="currentColor"
-              className="w-6 h-6"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth={2}
+                strokeWidth="2"
                 d="M15 19l-7-7 7-7"
-              />
+              ></path>
             </svg>
-          </button>
-        </div>
-
-        <div className="absolute top-1/2 right-2 transform -translate-y-1/2">
-          <button
-            className="p-2 bg-gray-900 bg-opacity-50 text-white rounded-full focus:outline-none"
-            onClick={nextSlide}
-          >
+            <span className="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-black dark:group-focus:ring-gray-800/70 group-focus:outline-none">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              className="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-gray-800"
               fill="none"
-              viewBox="0 0 24 24"
               stroke="currentColor"
-              className="w-6 h-6"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth={2}
+                strokeWidth="2"
                 d="M9 5l7 7-7 7"
-              />
+              ></path>
             </svg>
-          </button>
-        </div>
+            <span className="sr-only">Next</span>
+          </span>
+        </button>
       </div>
     </>
   );
