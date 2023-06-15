@@ -15,18 +15,18 @@ export default function Navbar({}: Props) {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
                 <div className="flex items-center justify-between py-3 md:py-4 md:block">
-                    <Link href={"/"}>
-                      <Image
-                        src="/Logo.png"
-                        width={60}
-                        height={60}
-                        sizes="100vw"
-                        alt="programundo"
-                      />
-                    </Link>
-                    <h1 className="md:hidden text-2xl font-bold" >Programundo</h1>
+                    <div className="flex flex-col align-center items-center">
+                      <Link href={"/"}>
+                        <Image
+                          src="/Logo.png"
+                          width={60}
+                          height={60}
+                          alt="programundo"
+                        />
+                      </Link>
+                      <h2 className="hidden md:block text-md font-bold items-center text-white " >PROGRAMUNDO</h2>
+                    </div>
                     <div className="md:hidden">
-                      
                       <button 
                         className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border" 
                         onClick={()=>setNavbar(!navbar)}>
