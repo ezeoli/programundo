@@ -24,9 +24,8 @@ export default function Navbar({}: Props) {
                         alt="programundo"
                       />
                     </Link>
-                    <h1 className="md:hidden text-4xl font-bold" >Programundo</h1>
                     <div className="md:hidden">
-                      
+                      <p>Programundo</p>
                       <button 
                         className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border" 
                         onClick={()=>setNavbar(!navbar)}>

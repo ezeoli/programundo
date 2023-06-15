@@ -24,7 +24,7 @@ export default function Navbar({}: Props) {
                         alt="programundo"
                       />
                     </Link>
-                    <h1 className="md:hidden text-4xl font-bold" >Programundo</h1>
+                    <h1 className="md:hidden" >Programundo</h1>
                     <div className="md:hidden">
                       
                       <button 
