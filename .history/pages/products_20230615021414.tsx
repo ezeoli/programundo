@@ -199,7 +199,7 @@ export default function Products() {
           </ul>
         </div>
 
-        <div className="absolute top-1/2 left-2 transform -translate-y-1/2">
+        <div className="absolute top-1/2 right-2 transform -translate-y-1/2">
           <button
             className="p-2 bg-gray-900 bg-opacity-50 text-white rounded-full focus:outline-none"
             onClick={prevSlide}
@@ -221,7 +221,7 @@ export default function Products() {
           </button>
         </div>
 
-        <div className="absolute top-1/2 right-2 transform -translate-y-1/2">
+        <div className="absolute top-1/2 left-2 transform -translate-y-1/2">
           <button
             className="p-2 bg-gray-900 bg-opacity-50 text-white rounded-full focus:outline-none"
             onClick={nextSlide}

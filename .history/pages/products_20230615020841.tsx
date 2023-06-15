@@ -5,7 +5,7 @@ import Navbar from "@/app/Components/Navbar";
 
 export default function Products() {
   const images = [
-    
+    "/programundo1.jpg",
     "/programundo2.jpg",
     "/programundo3.jpg",
     "/programundo4.jpg",
@@ -150,7 +150,7 @@ export default function Products() {
       <section id="products">
         <h2 className="text-2xl font-bold">Our Products</h2>
         <Image
-          src={"/programundo4.jpg"}
+          src={images[currentIndex]}
           width={500}
           height={500}
           priority={true}
@@ -199,7 +199,7 @@ export default function Products() {
           </ul>
         </div>
 
-        <div className="absolute top-1/2 left-2 transform -translate-y-1/2">
+        <div className="absolute top-1/2 right-2 transform -translate-y-1/2">
           <button
             className="p-2 bg-gray-900 bg-opacity-50 text-white rounded-full focus:outline-none"
             onClick={prevSlide}
@@ -221,7 +221,7 @@ export default function Products() {
           </button>
         </div>
 
-        <div className="absolute top-1/2 right-2 transform -translate-y-1/2">
+        <div className="absolute top-1/2 left-2 transform -translate-y-1/2">
           <button
             className="p-2 bg-gray-900 bg-opacity-50 text-white rounded-full focus:outline-none"
             onClick={nextSlide}

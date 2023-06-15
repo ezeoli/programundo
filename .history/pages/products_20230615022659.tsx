@@ -178,7 +178,7 @@ export default function Products() {
               width={500}
               height={500}
               alt="programundo"
-              className={`absolute top-0 left-0 w-full h-full transition-opacity duration-500 ${
+              className={`absolute top-0 left-0 w-2/3 h-full transition-opacity duration-500 ${
                 index === currentIndex ? "opacity-100" : "opacity-0"
               }`}
             />
@@ -199,10 +199,10 @@ export default function Products() {
           </ul>
         </div>
 
-        <div className="absolute top-1/2 left-2 transform -translate-y-1/2">
+        <div className="absolute top-1/2 right-2 transform -translate-y-1/2">
           <button
             className="p-2 bg-gray-900 bg-opacity-50 text-white rounded-full focus:outline-none"
-            onClick={prevSlide}
+            onClick={Slide}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -221,7 +221,7 @@ export default function Products() {
           </button>
         </div>
 
-        <div className="absolute top-1/2 right-2 transform -translate-y-1/2">
+        <div className="absolute top-1/2 left-2 transform -translate-y-1/2">
           <button
             className="p-2 bg-gray-900 bg-opacity-50 text-white rounded-full focus:outline-none"
             onClick={nextSlide}
