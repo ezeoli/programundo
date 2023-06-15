@@ -17,7 +17,7 @@ export default function Home() {
         <Navbar/>
       </header>
       <main className="">
-        <h1 className="text-4xl font-bold text-blue-800 text-center">
+        <h1 className="text-4xl mt-20 pt-10 font-bold text-blue-800 text-center">
           Welcome to the Homepage
         </h1>
         <br />

@@ -1,36 +1,65 @@
 import React from "react";
 import Image from "next/image";
-import "../globals.css";
 import Link from "next/link";
+import "../globals.css";
+import { useState } from "react";
 
 type Props = {};
 
 export default function Navbar({}: Props) {
+  const [navbar, setNavbar] = useState (false);
+
   return (
-    <nav className="flex bg-gray-400 h-16">
-      <Link href={"/"}>
-        <Image
-          src="/Logo.png"
-          width="0"
-      height="0"
-      sizes="100vw"
-      className="w-1/2 h-auto p-2" 
-          
-          alt="programundo"
-        />
-      </Link>
-      <Link href="/#aboutUs" className="flex-auto text-blue-800 ml-20 p-5">
-        About us
-      </Link>
-      <Link href="/products" className="flex-auto text-blue-800 p-5">
-        Our products
-      </Link>
-      <Link href="/#clients" className="flex-auto text-blue-800 p-5">
-        Clients
-      </Link>
-      <Link href="/contact" className="flex-auto text-blue-800 p-5">
-        Contact
-      </Link>
+    <div>
+    <nav className="w-full bg-gray-500 fixed top-0 left-0 right-0 z-10">
+      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+          <div>
+                <div className="flex items-center justify-between py-3 md:py-4 md:block">
+                    <Link href={"/"}>
+                      <Image
+                        src="/Logo.png"
+                        width={60}
+                        height={60}
+                        sizes="100vw"
+                        alt="programundo"
+                      />
+                    </Link>
+                    <div className="md:hidden">
+                      <button 
+                        className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border" 
+                        onClick={()=>setNavbar(!navbar)}>
+                        {navbar ? (
+                          <Image src="/Close.png" width={30} height={30} alt="close icon button"/>
+                        ):(
+                          <Image src="/Menu.png" width={30} height={30} alt="menu icon button" className="focus:border-none active:border-none"/>
+                        )}
+                      </button>
+                    </div>
+                </div>
+          </div>  
+          <div>
+              <div 
+                  className={`flex-1 justify-self-center pb-3 mt-6 md:block md:pb-0 md:mt-0 
+                  ${navbar?'p-12 md:p-0 block':'hidden'}`}>
+                    <ul className="h-screen md:h-auto items-center justify-center md:flex">
+                      <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
+                        <Link href="#aboutUs" onClick={()=>setNavbar(!navbar)}>About us</Link>
+                      </li>
+                      <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
+                        <Link href="#products" onClick={()=>setNavbar(!navbar)}>Our products</Link>
+                      </li>
+                      <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
+                        <Link href="#clients" onClick={()=>setNavbar(!navbar)}>Clients</Link>
+                      </li>
+                      <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
+                      <Link href="#Contact" onClick={()=>setNavbar(!navbar)}>Contact</Link>
+                      </li>
+                    </ul>
+              </div>
+          </div>
+      </div>
+      
     </nav>
+    </div>
   );
 }

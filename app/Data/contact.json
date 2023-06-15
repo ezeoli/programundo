@@ -1,0 +1,15 @@
+{
+    "title":"Do you want your own website?",
+    "subtitle":"Contact us!",
+
+    "nameForm":"Name",
+    "nameFormPlaceholder":"Your Name",
+    
+    "emailForm":"Email Address",
+    "emailFormPlaceholder":"you@example.com",
+    
+    "messageForm":"Message",
+    "messageFormPlaceholder":"Your Message",
+    
+    "buttonSubmit":"Submit"
+}
