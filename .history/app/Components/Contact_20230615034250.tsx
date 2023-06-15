@@ -14,7 +14,7 @@ export default function Contact() {
       <section id="Contact">
           <h1 className='text-4xl font-bold p-5' >{contact.title}</h1>
           <h2 className='text-2xl font-bold p-5'>{contact.subtitle}</h2>
-          <form onSubmit={handleSubmit} id="contact_form" className="flex flex-col p-6 px-4 mx-5 space-y-2 border border-gray-600 rounded-md w-10/12 md:w-6/12" >
+          <form onSubmit={handleSubmit} id="contact_form" className="flex flex-col p-5  mx-5 space-y-2 border border-gray-600 rounded-md w-full md:w-6/12" >
           <label htmlFor="Name" className="flex-col">{contact.nameForm}</label>
             <input id="Name" type="text" name="Name" required className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1 w-full" placeholder={contact.nameFormPlaceholder} autoComplete="Your Name" />
 
