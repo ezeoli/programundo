@@ -48,16 +48,16 @@ export default function Navbar({}: Props) {
                   ${navbar?'p-12 md:p-0 block':'hidden'}`}>
                     <ul className="h-screen md:h-auto items-center justify-center md:flex">
                       <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
-                        <Link href="#aboutUs" onClick={()=>setNavbar(!navbar)}>About us</Link>
+                        <Link href="#about" onClick={()=>setNavbar(!navbar)}>{t.navbar.button1}</Link>
                       </li>
                       <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
-                        <Link href="#products" onClick={()=>setNavbar(!navbar)}>Our products</Link>
+                        <Link href="#products" onClick={()=>setNavbar(!navbar)}>{t.navbar.button2}</Link>
                       </li>
                       <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
-                        <Link href="#clients" onClick={()=>setNavbar(!navbar)}>Clients</Link>
+                        <Link href="#clients" onClick={()=>setNavbar(!navbar)}>{t.navbar.button3}</Link>
                       </li>
                       <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
-                      <Link href="#Contact" onClick={()=>setNavbar(!navbar)}>Contact</Link>
+                      <Link href="#Contact" onClick={()=>setNavbar(!navbar)}>{t.navbar.button4}</Link>
                       </li>
                     </ul>
               </div>
