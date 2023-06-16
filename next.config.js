@@ -6,6 +6,10 @@ const nextConfig = {images: {
         hostname: '**.cloudinary.com',
       },
     ],
+  },
+  i18n:{
+    locales:["en", "es"],
+    defaultLocale:"en"
   }
 }
 
