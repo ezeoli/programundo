@@ -2,11 +2,14 @@ import React from 'react'
 import Image from "next/image";
 import "../globals.css";
 import { useRouter } from 'next/router';
+import { useIdiomas } from '@/hooks/idiomas';
 
 
 type Props = {}
 
 export default function Client({}: Props) {
+  const t = useIdiomas({});
+
   return (
     <section id="clients">
     <h2 className="text-4xl font-bold p-5">Clients</h2>

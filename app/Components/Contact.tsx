@@ -3,9 +3,11 @@ import React from 'react'
 import { useForm, ValidationError } from '@formspree/react';
 import "../globals.css";
 import contact from '../Data/contact.json'
+import { useIdiomas } from '@/hooks/idiomas';
 
 export default function Contact() {
-  
+  const t = useIdiomas({});
+
     const [state, handleSubmit] = useForm("xnqybkro");
     if (state.succeeded) {
         return <p>Thanks for Send your!</p>;

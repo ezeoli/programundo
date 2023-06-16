@@ -4,10 +4,14 @@ import "../globals.css";
 import Link from "next/link";
 import footer from "../Data/Footer.json";
 import Newsletter from "./Newsletter";
+import { useIdiomas } from "@/hooks/idiomas";
 
 type Props = {};
 
 export default function Footer({}: Props) {
+
+  const t = useIdiomas({});
+
   return (
     <>
       <div id="image_footer" className="bg-light px-5">

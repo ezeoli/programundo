@@ -3,10 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import "../globals.css";
 import { useState } from "react";
+import { useIdiomas } from "@/hooks/idiomas";
 
 type Props = {};
 
 export default function Navbar({}: Props) {
+  const t = useIdiomas({});
+
   const [navbar, setNavbar] = useState (false);
 
   return (

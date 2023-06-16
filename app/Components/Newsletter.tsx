@@ -1,8 +1,13 @@
+import { useIdiomas } from '@/hooks/idiomas';
 import React from 'react'
 
 type Props = {}
 
 export default function Newsletter({}: Props) {
+  
+  const t = useIdiomas({});
+
+
   return (
     <div className="w-full md:w-1/3 lg:w-4/12 px-4">
     <h3 className="mb-5 text-lg font-bold text-gray-900">Newsletter</h3>
