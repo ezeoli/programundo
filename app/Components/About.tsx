@@ -3,10 +3,14 @@ import Image from "next/image";
 import "../globals.css";
 import Link from "next/link";
 import about from "../Data/aboutUs.json"
+import { useIdiomas } from "@/hooks/idiomas";
 
 type Props = {};
 
 export default function About({}: Props) {
+  
+  const t = useIdiomas({});
+  
   return (
     <section id="about">
       <h2 className="text-4xl font-bold p-5">{about.title}</h2>
