@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import "../globals.css";
+import { useRouter } from 'next/router';
 
 
 type Props = {}
