@@ -62,7 +62,7 @@ export default function Products() {
     <main> 
       <nav
         aria-label="Page navigation example"
-        className="p-2 m-10 b-5 flex justify-center"
+        className="p-2 m-15 flex justify-center"
       >
         <ul className="inline-flex items-center -space-x-px">
           <li>
