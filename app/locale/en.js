@@ -44,8 +44,8 @@ export default {
 
     title2: "Services",
     links2: [
-      { href: "/appSoft", name: "App y Software a medida" },
-      { href: "/seo", name: "Posicionamiento SEO" },
+      { href: "/appSoft", name: "Custom App and Software" },
+      { href: "/seo", name: "SEO Positioning" },
       { href: "/webSite", name: "Web Sites" },
       { href: `/ecommerce`, name: "Ecommerce" }
     ],
@@ -60,26 +60,26 @@ export default {
   wsp:"Call us",
 
   webSite: {
-    title: "DISEÑO Y DESARROLLO DE SITIOS WEBS",
+    title: "DESIGN AND DEVELOPMENT OF WEBSITES",
     image: "/programundo2.jpg",
-    title1: "Creamos el sitio web que estás buscando.",
+    title1: "We create the website you are looking for.",
     descriptiont1:
-      "Tener una página web nos brinda credibilidad ante los clientes potenciales y nos ayuda a ser visibles en los buscadores, de ahí la importancia de crear una estructura en la que el contenido resulte relevante.",
-    button1: "Contactanos",
-    title2: "Landing pages, Sitios Web Corporativos, Blogs",
+      "Having a web page gives us credibility with potential customers and helps us to be visible in search engines, hence the importance of creating a structure in which the content is relevant.",
+    button1: "Contact us",
+    title2: "Landing pages, Corporate Websites, Blogs",
     descriptiont2:
-      "Creamos tu sitio web corporativo para posicionar y elevar tu marca. Creamos landing pages diseñadas específicamente para convertir visitas en potenciales clientes.Te ayudamos a tener una página web atractiva y efectiva, que conecte con tu público objetivo y aumente tus ventas.",
-    item1: "Diseño a medida",
-    item2: "Análisis de la competencia para conseguir mejores resultados",
-    item3: "Adaptada a todos los dispositivos móviles",
+      "We create your corporate website to position and elevate your brand. We create landing pages specifically designed to convert visitors into potential customers. We help you have an attractive and effective website that connects with your target audience and increases your sales.",
+    item1: "Custom design",
+    item2: "Analysis of the competition to achieve better results",
+    item3: "Adapted to all mobile devices",
     image2: "/programundo2.jpg",
-    button2: "Pedinos un presupuesto",
+    button2: "Ask us for a budget",
   },
 
   seo: {
-    title: "POSICIONAMIENTO SEO",
+    title: "SEO POSITIONING",
     image: "/programundo2.jpg",
-    title1: "SEO para aumentar tus ventas",
+    title1: "SEO to increase your sales",
     descriptiont1:
       "El posicionamiento SEO es el proceso de aumentar la visibilidad de las páginas web en buscadores para atraer más tráfico relevante y de calidad. El objetivo es que tu sitio web aparezca entre los primeros resultados de búsqueda cuando se realiza una consulta relacionada con productos y servicios como los tuyos.",
     button1: "Contactanos",
@@ -89,7 +89,7 @@ export default {
     item3: "RECIBÍ TRÁFICO CUALIFICADO EN TU PÁGINA WEB",
     item4: "SUPERA A TU COMPETENCIA Y AUMENTA LAS VENTAS",
     image2: "/programundo2.jpg",
-    button2: "Pedinos un presupuesto"
+    button2: "Ask us for a budget"
   },
 
   ecommerce: {
