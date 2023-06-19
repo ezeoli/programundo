@@ -1,15 +1,22 @@
 "use client"
-import Navbar from "./Components/Navbar";
+import Navbar from "../app/Components/Navbar";
 import React, { useState } from 'react';
-import Client from "./Components/Client";
-import Products from "./Components/Products";
-import Contact from "./Components/Contact";
-import About from "./Components/About";
-import Footer from "./Components/Footer";
-import Carrusel from "./Components/Carrusel";
-import ButtonWsp from "./Components/ButtonWsp";
+import Client from "../app/Components/Client";
+import Products from "../app/Components/Products";
+import Contact from "../app/Components/Contact";
+import About from "../app/Components/About";
+import Footer from "../app/Components/Footer";
+import Carrusel from "../app/Components/Carrusel";
+import ButtonWsp from "../app/Components/ButtonWsp";
+import {useIdiomas} from "@/hooks/idiomas";
+
+
 
 export default function Home() {
+
+   const t = useIdiomas({});
+   
+  
 
   return (
     <div>
@@ -18,7 +25,7 @@ export default function Home() {
       </header>
       <main className="">
         <h1 className="text-4xl mt-20 pt-10 font-bold text-blue-800 text-center">
-          Welcome to the Homepage
+          {t.home.title}
         </h1><br />
         <Carrusel/><br />
         <About/> <br />
@@ -33,11 +40,3 @@ export default function Home() {
     </div>
   );
 }
-
-
-
-
-
-
-
-
