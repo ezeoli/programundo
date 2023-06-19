@@ -1,3 +1,5 @@
+import Footer from "@/app/Components/Footer";
+import Navbar from "@/app/Components/Navbar";
 import { useIdiomas } from "@/hooks/idiomas";
 import Image from "next/image";
 import React from "react";
@@ -9,6 +11,8 @@ export default function appSoft({}: Props) {
     const t = useIdiomas({});
 
   return (
+    <>
+    <Navbar/>
     <div className="md:px-20 px-4 mx-auto">
       <div className="mt-20 text-center">
         <a className="mb-5 py-20 block font-medium uppercase tracking-widest text-xs leading-4 text-gray-500">
@@ -83,7 +87,7 @@ export default function appSoft({}: Props) {
             </span>
           </li>{" "}
         </ul>{" "}
-        <div className="relative lg:absolute top-0 right-0 lg:mt-12 lg:w-1/2">
+        <div className="relative lg:relative top-0 right-0 lg:mt-12 lg:w-1/2">
           <Image
             src={t.appSoft.image2}
 
@@ -103,5 +107,7 @@ export default function appSoft({}: Props) {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }

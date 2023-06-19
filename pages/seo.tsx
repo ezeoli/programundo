@@ -1,3 +1,5 @@
+import Footer from "@/app/Components/Footer";
+import Navbar from "@/app/Components/Navbar";
 import { useIdiomas } from "@/hooks/idiomas";
 import Image from "next/image";
 import React from "react";
@@ -9,6 +11,8 @@ export default function seo({}: Props) {
     const t = useIdiomas({});
 
   return (
+    <>
+    <Navbar/>
     <div className="md:px-20 px-4 mx-auto">
       <div className="mt-20 text-center">
         <a className="mb-5 py-20 block font-medium uppercase tracking-widest text-xs leading-4 text-gray-500">
@@ -20,13 +24,13 @@ export default function seo({}: Props) {
         <Image
           src={t.seo.image}
 
-          width={200}
-          height={200}
+          width={400}
+          height={400}
           alt=""
           className="rounded-md"
         />{" "}
         <div className="lg:max-w-lg">
-          <h2 className="mb-10 font-heading font-medium text-7xl xl:text-8xl leading-snug">
+          <h2 className="mb-10 font-heading font-medium text-4xl xl:text-5xl leading-snug">
           {t.seo.title1}
 
           </h2>{" "}
@@ -46,7 +50,7 @@ export default function seo({}: Props) {
       <div className="md:px-20 px-4 mx-auto">
         <div className="mb-20 lg:mb-0 w-full lg:w-1/2">
           <div className="pb-14 xl:pb-20 mb-10 xl:mb-16 border-b border-gray-200">
-            <h2 className="font-heading font-medium text-7xl xl:text-8xl leading-snug">
+            <h2 className="font-heading font-medium text-4xl xl:text-5xl leading-snug">
             {t.seo.title2}
 
             </h2>
@@ -73,7 +77,7 @@ export default function seo({}: Props) {
             </span>
           </li>{" "}
         </ul>{" "}
-        <div className="relative lg:absolute top-0 right-0 lg:mt-12 lg:w-1/2">
+        <div className="relative lg:relative top-0 right-0 lg:mt-12 lg:w-1/2">
           <Image
             src={t.seo.image2}
 
@@ -93,5 +97,7 @@ export default function seo({}: Props) {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
