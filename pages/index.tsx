@@ -15,6 +15,7 @@ import {useIdiomas} from "@/hooks/idiomas";
 export default function Home() {
 
    const t = useIdiomas({});
+   
   
 
   return (
@@ -25,7 +26,6 @@ export default function Home() {
       <main className="">
         <h1 className="text-4xl mt-20 pt-10 font-bold text-blue-800 text-center">
           {t.home.title}
-        {}
         </h1><br />
         <Carrusel/><br />
         <About/> <br />

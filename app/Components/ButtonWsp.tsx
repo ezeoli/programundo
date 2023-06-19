@@ -29,7 +29,7 @@ export default function ButtonWsp({}: Props) {
           >
             <FaWhatsapp className="text-white text-4xl" />
             {isHovered && (
-              <div className="ml-2 hidden md:inline-block">Call us</div>
+              <div className="ml-2 hidden md:inline-block">{t.wsp}</div>
             )}
           </div>
         </div>
