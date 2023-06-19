@@ -39,7 +39,7 @@ export default function seo({}: Props) {
 
           </p>{" "}
           <a
-            href="/contacto/"
+           href="/#Contact"
             className="mb-6 mt-3 px-2 py-2 w-48 bg-[#BB2649] border-b border-gray-100 text-white hover:bg-[#A8133A] rounded text-sm text-center items-center font-semibold drop-shadow-lg"
           >
             {t.seo.button1}
@@ -89,7 +89,7 @@ export default function seo({}: Props) {
         </div>{" "}
         <div className="mt-10 px-4">
           <a
-            href="/contacto/"
+           href="/#Contact"
             className="mb-6 md:mt-3 md:px-2 px-4 py-2 w-48 bg-[#BB2649] border-b border-gray-100 text-white hover:bg-[#A8133A] rounded text-sm text-center items-center font-semibold drop-shadow-lg"
           >
             {t.seo.button2}
