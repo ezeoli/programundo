@@ -2,9 +2,12 @@
 import "../globals.css";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { useIdiomas } from "@/hooks/idiomas";
 
 
 export default function Carrusel() {
+  const t = useIdiomas({});
+
   const images = [
     
     "/programundo2.jpg",

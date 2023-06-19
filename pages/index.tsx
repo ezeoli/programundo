@@ -8,17 +8,15 @@ import About from "../app/Components/About";
 import Footer from "../app/Components/Footer";
 import Carrusel from "../app/Components/Carrusel";
 import ButtonWsp from "../app/Components/ButtonWsp";
-import { useRouter } from "next/router";
-import en from "../app/locale/en"
-import es from "../app/locale/es"
+import {useIdiomas} from "@/hooks/idiomas";
+
 
 
 export default function Home() {
 
-    const router = useRouter()
-    const {locale} = router
-    const t = locale === "en" ? en : es
-
+   const t = useIdiomas({});
+   
+  
 
   return (
     <div>
