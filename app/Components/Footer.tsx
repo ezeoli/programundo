@@ -15,8 +15,6 @@ type Props = {};
 export default function Footer({}: Props) {
   
   const t = useIdiomas({});
-  console.log('path',useRouter().asPath)
-  
  
   return (
     <>
