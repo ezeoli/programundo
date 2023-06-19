@@ -4,6 +4,8 @@ import Link from "next/link";
 import "../globals.css";
 import { useState } from "react";
 import { useIdiomas } from "@/hooks/idiomas";
+import { useRouter } from "next/router";
+
 
 type Props = {};
 
@@ -19,7 +21,7 @@ export default function Navbar({}: Props) {
           <div>
                 <div className="flex items-center justify-between py-3 md:py-4 md:block">
                     <div className="flex flex-col align-center items-center">
-                      <Link href={"/"}>
+                      <Link href={`${useRouter().locale}${"/"}`}>
                         <Image
                           src="/Logo.png"
                           width={60}
@@ -48,16 +50,16 @@ export default function Navbar({}: Props) {
                   ${navbar?'p-12 md:p-0 block':'hidden'}`}>
                     <ul className="h-screen md:h-auto items-center justify-center md:flex">
                       <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
-                        <Link href="#about" onClick={()=>setNavbar(!navbar)}>{t.navbar.button1}</Link>
+                        <Link href="/#about" onClick={()=>setNavbar(!navbar)}>{t.navbar.button1}</Link>
                       </li>
                       <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
-                        <Link href="#products" onClick={()=>setNavbar(!navbar)}>{t.navbar.button2}</Link>
+                        <Link href="/#products" onClick={()=>setNavbar(!navbar)}>{t.navbar.button2}</Link>
                       </li>
                       <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
-                        <Link href="#clients" onClick={()=>setNavbar(!navbar)}>{t.navbar.button3}</Link>
+                        <Link href="/#clients" onClick={()=>setNavbar(!navbar)}>{t.navbar.button3}</Link>
                       </li>
                       <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
-                      <Link href="#Contact" onClick={()=>setNavbar(!navbar)}>{t.navbar.button4}</Link>
+                      <Link href="/#Contact" onClick={()=>setNavbar(!navbar)}>{t.navbar.button4}</Link>
                       </li>
                     </ul>
               </div>

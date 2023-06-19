@@ -8,19 +8,22 @@ import { useIdiomas } from "@/hooks/idiomas";
 import { useRouter } from "next/router";
 
 
+
 type Props = {};
 
 
 export default function Footer({}: Props) {
   
   const t = useIdiomas({});
+  console.log('path',useRouter().asPath)
+  
  
   return (
     <>
       <div id="image_footer" className="bg-light px-5">
         <div className="flex flex-wrap pt-24 pb-12 -mx-4">
           <div className="w-full md:w-1/2 lg:w-4/12 px-4 mb-16 lg:mb-0">
-            <a href="/" className="inline-block mb-4">
+            <Link href={`${useRouter().locale}${"/"}`} className="inline-block mb-4">
               <Image
                 src={t.footer.logo}
                 width="0"
@@ -29,7 +32,7 @@ export default function Footer({}: Props) {
                 className="w-full h-auto p-2 rounded mx-8"
                 alt="logo"
               />
-            </a>
+            </Link>
             <p className="text-base md:text-lg text-black font-medium lg:w-64 pl-2">
               {t.footer.descriptionLogo}
             </p>
@@ -51,13 +54,13 @@ export default function Footer({}: Props) {
               <li key={l.href} className="mb-4">
                 <div>
                   {" "}
-                  <a
-                    href={`${useRouter().locale}${l.href}`}
+                  <Link
+                    href=  {`${useRouter().locale}${l.href}`}
                     aria-current="page"
                     className="inline-block text-gray-500 hover:text-primary font-medium"
                   >
                     {l.name}
-                  </a>
+                  </Link>
                 </div>
               </li>
             </React.Fragment>)}
@@ -79,13 +82,13 @@ export default function Footer({}: Props) {
                 <React.Fragment key={l.name}>
                   <li key={l.href} className="mb-4">
                     <div>
-                      <a
+                      <Link
                         href={`${useRouter().locale}${l.href}`}
                         aria-current="page"
                         className="inline-block text-gray-500 hover:text-primary font-medium"
                       >
                         {l.name}
-                      </a>
+                      </Link>
                     </div>
                   </li>
                 </React.Fragment>

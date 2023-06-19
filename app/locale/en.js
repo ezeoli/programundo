@@ -37,9 +37,9 @@ export default {
     title1: "Links",
     links1: [
       { href: "/#about", name: "About us" },
-      { href: "/products", name: "Products" },
+      { href: "/#products", name: "Products" },
       { href: "/#clients", name: "Client" },
-      { href: "/contact", name: "Contact" },
+      { href: "/#contact", name: "Contact" },
     ],
 
     title2: "Services",
