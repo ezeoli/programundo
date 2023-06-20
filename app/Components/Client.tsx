@@ -11,7 +11,7 @@ export default function Client({}: Props) {
   const t = useIdiomas({});
 
   return (
-    <section id="clients">
+    <section id={t.id.clients}>
     <h2 className="text-4xl font-bold p-5">Clients</h2>
     
     <div className="sm:flex">
