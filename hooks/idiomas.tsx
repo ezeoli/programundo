@@ -1,4 +1,3 @@
-import React from 'react'
 import { useRouter } from 'next/router'
 import es from "../app/locale/es"
 import en from "../app/locale/en"
