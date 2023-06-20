@@ -5,6 +5,7 @@ import "../globals.css";
 import { useState } from "react";
 import { useIdiomas } from "@/hooks/idiomas";
 import { useRouter } from "next/router";
+import logo from "../../public/Logo.png"
 
 type Props = {};
 
@@ -17,27 +18,24 @@ export default function Navbar({}: Props) {
     router.push(router.pathname, router.pathname, { locale: t });
     setNavbar(!navbar);
   };
-
+  
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <div>
+    <React.Fragment>
       <nav className="w-full bg-gray-500 fixed top-0 left-0 right-0 z-10">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-          <div>
+          <>
             <div className="flex items-center justify-between py-3 md:py-4 md:block">
               <div className="flex flex-col align-center items-center">
                 <Link href={`${useRouter().locale}${"/"}`}>
                   <Image
-                    src="/Logo.png"
-                    width={60}
-                    height={60}
+                    src={logo}
                     alt="programundo"
+                    aria-label="Logo de Programundo"
                   />
                 </Link>
-                <h2 className="hidden md:block text-md font-bold items-center text-white ">
-                  PROGRAMUNDO
-                </h2>
+                <h2 className="hidden md:block text-md font-bold items-center text-white">PROGRAMUNDO</h2>
               </div>
               <div className="md:hidden">
                 <button
@@ -50,6 +48,7 @@ export default function Navbar({}: Props) {
                       width={30}
                       height={30}
                       alt="close icon button"
+                      aria-label="close menu"
                     />
                   ) : (
                     <Image
@@ -58,30 +57,30 @@ export default function Navbar({}: Props) {
                       height={30}
                       alt="menu icon button"
                       className="focus:border-none active:border-none"
+                      aria-label="menu"
                     />
                   )}
                 </button>
               </div>
             </div>
-          </div>
+          </>
           <div>
             <div
               className={`flex-1 justify-self-center pb-3 mt-6 md:block md:pb-0 md:mt-0 
-                  ${navbar ? "p-12 md:p-0 block" : "hidden"}`}
+              ${navbar ? "p-12 md:p-0 block" : "hidden"}`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex">
                 {t.navbar.map((b:any)=>
-                  <React.Fragment key={b.button}>
-                      <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
-                        <Link href={b.href} onClick={() => setNavbar(!navbar)}>
+                    <Link href={b.href} onClick={() => setNavbar(!navbar)} key={b.button}>
+                      <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black" aria-label={b.button}>
                           {b.button}
-                        </Link>
                       </li>
-                  </React.Fragment>
+                    </Link>
                   )}
                 <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
                   <button
-                    className="bg-primary hover:bg-secondary text-white font-bold py-2 px-3 rounded-md text-center"
+                    className="bg-primary hover:bg-secondary text-white font-bold py-2 px-2 rounded-md text-center"
+                    aria-label="Languaje"
                     onClick={handleLang}
                   >
                     {useRouter().locale === "es"
@@ -94,6 +93,6 @@ export default function Navbar({}: Props) {
           </div>
         </div>
       </nav>
-    </div>
+    </React.Fragment>
   );
 }

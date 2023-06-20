@@ -8,14 +8,16 @@ export default {
   },
 
   navbar: [
-    {href:'/#websites_developers', button: "About us"},
-    {href:'/#website_design', button: "Our Works"},
-    {href:'/#clients', button: "Clients"},
-    {href:'/#contact', button: "Contact"},
+    {href:'/#websites_developers', button: "ABOUT US"},
+    {href:'/#website_design', button: "WORKS"},
+    {href:'/#clients', button: "CLIENTS"},
+    {href:'/#contact', button: "CONTACT"},
   ],
   
-  home: {
-    title: "Welcome",
+  welcome: {
+    title: "Are you looking for a Website developers?",
+    paragraph1: "We are a specialized team in web design. We combine our individual skills and experiences to offer you creative and personalized solutions. Whether you need an informative website, an online store, or an interactive platform, we will work with you at every stage of the design process. ",
+    paragraph2: "Our priority is your satisfaction and the success of your business. We ensure that your website is visually appealing, functional, intuitive, and optimized. Trust us to provide you with a professional, modern, and customized web design that meets your needs and preferences.",
   },
 
   about: {

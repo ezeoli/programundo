@@ -8,14 +8,16 @@ export default {
   },
 
   navbar: [
-    {href:'/#desarrolladores_web', button: "Quines Somos"},
-    {href:'/#disenos_de_paginas_web', button: "Nuestros Trabajos"},
-    {href:'/#clientes', button: "Clientes"},
-    {href:'/#contacto', button: "Contacto"},
+    {href:'/#desarrolladores_web', button: "QUIENES SOMOS"},
+    {href:'/#disenos_de_paginas_web', button: "TRABAJOS"},
+    {href:'/#clientes', button: "CLIENTES"},
+    {href:'/#contacto', button: "CONTACTO"},
   ],
 
-  home: {
-    title: "Bienvenido",
+  welcome: {
+    title: "¿Estás buscando un diseñador de paginas web?",
+    paragraph1: "Somos un equipo especializado en diseño de páginas web. Unimos nuestras habilidades individuales y experiencias para ofrecerte soluciones creativas y personalizadas. Ya sea que necesites una página web informativa, una tienda en línea o una plataforma interactiva, trabajaremos contigo en cada etapa del proceso de diseño.",
+    paragraph2: "Nuestra prioridad es tu satisfacción y el éxito de tu negocio. Nos aseguramos de que tu sitio web sea visualmente atractivo, funcional, intuitivo y optimizado. Confía en nosotros para obtener un diseño web profesional, moderno y adaptado a tus necesidades y preferencias.",
   },
 
   about: {

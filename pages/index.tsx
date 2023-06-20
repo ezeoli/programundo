@@ -8,26 +8,21 @@ import About from "../app/Components/About";
 import Footer from "../app/Components/Footer";
 import Carrusel from "../app/Components/Carrusel";
 import ButtonWsp from "../app/Components/ButtonWsp";
+import Welcome from "@/app/Components/Welcome";
 import {useIdiomas} from "@/hooks/idiomas";
-
 
 
 export default function Home() {
 
    const t = useIdiomas({});
    
-  
-
   return (
-    <div>
+    <>
       <header>
         <Navbar/>
       </header>
       <main className="">
-        <h1 className="text-4xl mt-20 pt-10 font-bold text-blue-800 text-center">
-          {t.home.title}
-        </h1><br />
-        <Carrusel/><br />
+        <Welcome/><br />
         <About/> <br />
         <Products/><br />
         <Client/><br />
@@ -37,6 +32,6 @@ export default function Home() {
         <Footer/>
       </footer>
       <ButtonWsp/>
-    </div>
+    </>
   );
 }
