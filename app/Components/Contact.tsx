@@ -13,7 +13,7 @@ export default function Contact() {
         return <p>Thanks for Send your!</p>;
     }
     return (
-      <section id="Contact">
+      <section id={t.id.contact}>
           <h1 className='text-4xl font-bold p-5' >{t.contact.title}</h1>
           <h2 className='text-2xl font-bold p-5'>{t.contact.subtitle}</h2>
           <form onSubmit={handleSubmit} id="contact_form" className="flex flex-col p-6 px-4 mx-5 space-y-2 border border-gray-600 rounded-md w-10/12 md:w-6/12" >

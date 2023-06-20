@@ -12,7 +12,7 @@ export default function About({}: Props) {
   const t = useIdiomas({});
   
   return (
-    <section id="about">
+    <section id={t.id.about}>
       <h2 className="text-4xl font-bold p-5">{t.about.title}</h2>
 
       <div className="sm:flex">

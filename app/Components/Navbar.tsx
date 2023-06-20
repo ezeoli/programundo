@@ -15,6 +15,7 @@ export default function Navbar({}: Props) {
   const handleLang = () => {
     let t = router.locale === "es" ? "en" : "es";
     router.push(router.pathname, router.pathname, { locale: t });
+    setNavbar(!navbar);
   };
 
   const [navbar, setNavbar] = useState(false);
@@ -69,26 +70,15 @@ export default function Navbar({}: Props) {
                   ${navbar ? "p-12 md:p-0 block" : "hidden"}`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex">
-                <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
-                  <Link href="/#about" onClick={() => setNavbar(!navbar)}>
-                    {t.navbar.button1}
-                  </Link>
-                </li>
-                <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
-                  <Link href="/#products" onClick={() => setNavbar(!navbar)}>
-                    {t.navbar.button2}
-                  </Link>
-                </li>
-                <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
-                  <Link href="/#clients" onClick={() => setNavbar(!navbar)}>
-                    {t.navbar.button3}
-                  </Link>
-                </li>
-                <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
-                  <Link href="/#Contact" onClick={() => setNavbar(!navbar)}>
-                    {t.navbar.button4}
-                  </Link>
-                </li>
+                {t.navbar.map((b:any)=>
+                  <React.Fragment key={b.button}>
+                      <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
+                        <Link href={b.href} onClick={() => setNavbar(!navbar)}>
+                          {b.button}
+                        </Link>
+                      </li>
+                  </React.Fragment>
+                  )}
                 <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
                   <button
                     className="bg-primary hover:bg-secondary text-white font-bold py-2 px-3 rounded-md text-center"

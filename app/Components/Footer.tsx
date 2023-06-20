@@ -7,10 +7,7 @@ import Newsletter from "./Newsletter";
 import { useIdiomas } from "@/hooks/idiomas";
 import { useRouter } from "next/router";
 
-
-
 type Props = {};
-
 
 export default function Footer({}: Props) {
   

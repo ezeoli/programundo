@@ -1,11 +1,18 @@
 export default {
   
-  navbar: {
-    button1: "About us",
-    button2: "Our products",
-    button3: "Clients",
-    button4: "Contact",
+  id:{
+    about:'websites_developers',
+    products:'website_design',
+    clients: 'clients',
+    contact: 'contact',
   },
+
+  navbar: [
+    {href:'/#websites_developers', button: "About us"},
+    {href:'/#website_design', button: "Our Works"},
+    {href:'/#clients', button: "Clients"},
+    {href:'/#contact', button: "Contact"},
+  ],
   
   home: {
     title: "Welcome",

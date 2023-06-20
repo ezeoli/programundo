@@ -1,11 +1,18 @@
 export default {
   
-  navbar: {
-    button1: "Acerca de nosotros",
-    button2: "Nuestros productos",
-    button3: "Clientes",
-    button4: "Contacto",
+  id:{
+    about:'desarrolladores_web',
+    products:'disenos_de_paginas_web',
+    clients: 'clientes',
+    contact: 'contacto',
   },
+
+  navbar: [
+    {href:'/#desarrolladores_web', button: "Quines Somos"},
+    {href:'/#disenos_de_paginas_web', button: "Nuestros Trabajos"},
+    {href:'/#clientes', button: "Clientes"},
+    {href:'/#contacto', button: "Contacto"},
+  ],
 
   home: {
     title: "Bienvenido",
