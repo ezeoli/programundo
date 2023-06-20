@@ -13,6 +13,7 @@ export default {
     {href:'/#clientes', button: "CLIENTES"},
     {href:'/#contacto', button: "CONTACTO"},
   ],
+  lang:"/ingles.png",
 
   welcome: {
     title: "¿Estás buscando un diseñador de paginas web?",

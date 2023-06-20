@@ -5,7 +5,7 @@ import "../globals.css";
 import { useState } from "react";
 import { useIdiomas } from "@/hooks/idiomas";
 import { useRouter } from "next/router";
-import logo from "../../public/Logo.png"
+import logo from "../../public/Logo.png";
 
 type Props = {};
 
@@ -18,7 +18,7 @@ export default function Navbar({}: Props) {
     router.push(router.pathname, router.pathname, { locale: t });
     setNavbar(!navbar);
   };
-  
+
   const [navbar, setNavbar] = useState(false);
 
   return (
@@ -35,7 +35,9 @@ export default function Navbar({}: Props) {
                     aria-label="Logo de Programundo"
                   />
                 </Link>
-                <h2 className="hidden md:block text-md font-bold items-center text-white">PROGRAMUNDO</h2>
+                <h2 className="hidden md:block text-md font-bold items-center text-white">
+                  PROGRAMUNDO
+                </h2>
               </div>
               <div className="md:hidden">
                 <button
@@ -70,22 +72,31 @@ export default function Navbar({}: Props) {
               ${navbar ? "p-12 md:p-0 block" : "hidden"}`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex">
-                {t.navbar.map((b:any)=>
-                    <Link href={b.href} onClick={() => setNavbar(!navbar)} key={b.button}>
-                      <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black" aria-label={b.button}>
-                          {b.button}
-                      </li>
-                    </Link>
-                  )}
-                <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
-                  <button
-                    className="bg-primary hover:bg-secondary text-white font-bold py-2 px-2 rounded-md text-center"
-                    aria-label="Languaje"
-                    onClick={handleLang}
+                {t.navbar.map((b: any) => (
+                  <Link
+                    href={b.href}
+                    onClick={() => setNavbar(!navbar)}
+                    key={b.button}
                   >
-                    {useRouter().locale === "es"
-                      ? "en".toLocaleUpperCase()
-                      : "es".toLocaleUpperCase()}
+                    <li
+                      className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black"
+                      aria-label={b.button}
+                    >
+                      {b.button}
+                    </li>
+                  </Link>
+                ))}
+
+                <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
+                  <button onClick={handleLang}>
+                    <Image
+                      src={useRouter().locale === "es" ? t.lang : t.lang}
+                      width={30}
+                      height={30}
+                      alt="menu icon button"
+                      className="focus:border-none active:border-none"
+                      aria-label="menu"
+                    />
                   </button>
                 </li>
               </ul>
