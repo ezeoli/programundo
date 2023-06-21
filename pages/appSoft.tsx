@@ -24,7 +24,7 @@ export default function appSoft({}: Props) {
           <img src={t.appSoft.image} alt="" className=" rounded-md" />
 
           <div className="lg:max-w-lg">
-            <h2 className="mb-10 font-heading font-medium text-5xl xl:text-6xl leading-snug">
+            <h2 className="mb-10 font-heading font-medium text-4xl xl:text-5xl leading-snug">
               {t.appSoft.title1}
             </h2>{" "}
             <p className="mb-6 text-lg leading-6 text-darkBlueGray-400">
@@ -43,7 +43,7 @@ export default function appSoft({}: Props) {
           <div className="">
             <div className="">
               <div className="pb-14 xl:pb-10 mb-10 xl:mb-6 mt-32 ">
-                <h2 className="font-heading font-medium text-5xl xl:text-6xl leading-snug ">
+                <h2 className="font-heading font-medium text-4xl xl:text-5xl leading-snug ">
                   {t.appSoft.title2}
                 </h2>
               </div>
