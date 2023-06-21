@@ -121,7 +121,7 @@ export default {
 
   appSoft: {
     title: "APPS Y SOFTWARE A MEDIDA",
-    image: "/programundo2.jpg",
+    image: "/appSoft1.jpg",
     title1: "Creamos el software que necesites",
     descriptiont1:
       "Diseñamos y construimos software corporativo a medida. Creamos soluciones especialmente pensadas para optimizar los procesos propios de su empresa.",

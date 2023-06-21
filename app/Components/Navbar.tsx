@@ -1,8 +1,7 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import "../globals.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import { useIdiomas } from "@/hooks/idiomas";
 import { useRouter } from "next/router";
 import logo from "../../public/Logo.png";
@@ -10,6 +9,8 @@ import logo from "../../public/Logo.png";
 type Props = {};
 
 export default function Navbar({}: Props) {
+
+  
   const t = useIdiomas({});
   let router = useRouter();
 
@@ -19,11 +20,22 @@ export default function Navbar({}: Props) {
     setNavbar(!navbar);
   };
 
+  const lang= <button onClick={handleLang}>
+  <Image
+    src={useRouter().locale === "es" ? t.lang : t.lang}
+    width={30}
+    height={30}
+    alt="idioma"
+    className="focus:border-none active:border-none"
+    aria-label="menu"
+    />
+</button>
+
   const [navbar, setNavbar] = useState(false);
 
   return (
     <React.Fragment>
-      <nav className="w-full bg-gray-500 fixed top-0 left-0 right-0 z-10">
+      <nav className="w-full bg-gray-500 fixed top-0 left-0 right-0 z-10 shadow-[0_30px_60px_-3px_rgba(0,0,0,0.5)]">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <>
             <div className="flex items-center justify-between py-3 md:py-4 md:block">
@@ -39,7 +51,9 @@ export default function Navbar({}: Props) {
                   PROGRAMUNDO
                 </h2>
               </div>
+              <div>
               <div className="md:hidden">
+                {lang}
                 <button
                   className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                   onClick={() => setNavbar(!navbar)}
@@ -63,7 +77,11 @@ export default function Navbar({}: Props) {
                     />
                   )}
                 </button>
+              
+              
+                  </div>
               </div>
+
             </div>
           </>
           <div>
@@ -86,19 +104,7 @@ export default function Navbar({}: Props) {
                     </li>
                   </Link>
                 ))}
-
-                <li className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black">
-                  <button onClick={handleLang}>
-                    <Image
-                      src={useRouter().locale === "es" ? t.lang : t.lang}
-                      width={30}
-                      height={30}
-                      alt="menu icon button"
-                      className="focus:border-none active:border-none"
-                      aria-label="menu"
-                    />
-                  </button>
-                </li>
+              {lang}
               </ul>
             </div>
           </div>
