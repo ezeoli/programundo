@@ -5,6 +5,7 @@ export default {
     products:'website_design',
     clients: 'clients',
     contact: 'contact',
+    carousel: 'carousel',
   },
 
   navbar: [
