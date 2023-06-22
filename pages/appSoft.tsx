@@ -12,14 +12,14 @@ export default function appSoft({}: Props) {
   return (
     <>
       <Navbar />
-      <div className="md:px-20 px-4 mx-auto">
-        <div className="mt-20 text-center">
+      <div className="md:px-20 pb-20 mx-auto">
+        <div className="mt-28 text-center">
           <a className="mb-5 py-20 block font-medium uppercase tracking-widest text-xl leading-4 text-gray-500">
             {t.appSoft.title}
           </a>
         </div>
 
-        <div className="grid lg:grid-cols-2 lg:items-center gap-14 lg:gap-16 xl:gap-44 mt-10 mx-10">
+        <div className="grid lg:grid-cols-2 lg:items-center gap-14 lg:gap-16 xl:gap-44  mx-8">
           
           <img src={t.appSoft.image} alt="" className=" rounded-md" />
 
@@ -74,14 +74,7 @@ export default function appSoft({}: Props) {
                 </span>
               </li>{" "}
             </ul>
-          </div>
-          
-          
-          <div className="mb-20">
-            <div className="md:mt-8 xl:mt-32">
-              <img src={t.appSoft.image2} alt="" className="rounded-md" />
-            </div>{" "}
-            <div className="mt-10 px-4">
+              <div className="mt-10 px-4">
               <a
                 href="/#Contact"
                 className="mb-6 md:mt-3 md:px-2 px-4 py-2 w-48 bg-primary border-b border-gray-100 text-white hover:bg-secondary rounded text-sm text-center items-center font-semibold drop-shadow-lg"
@@ -89,6 +82,14 @@ export default function appSoft({}: Props) {
                 {t.appSoft.button2}
               </a>
             </div>
+          </div>
+          
+          
+          <div className="mb-20">
+            <div className="md:mt-8 xl:mt-32">
+              <img src={t.appSoft.image2} alt="" className="rounded-md" />
+            </div>{" "}
+          
           </div>
         </div>
       </div>
