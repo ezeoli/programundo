@@ -2,9 +2,12 @@
 import "../globals.css";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { useIdiomas } from "@/hooks/idiomas";
 
 
 export default function Carrusel() {
+  const t = useIdiomas({});
+
   const images = [
     
     "/programundo2.jpg",
@@ -55,15 +58,7 @@ export default function Carrusel() {
 
   return (
     <>
-      
-
-     
-
-      <div
-        id="default-carousel"
-        className="relative w-full"
-        data-carousel="slide"
-      >
+      <div id="default-carousel" className="relative w-full" data-carousel="slide" >
         <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
           {images.map((image, index) => (
             <Image

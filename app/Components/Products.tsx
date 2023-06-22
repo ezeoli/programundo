@@ -1,13 +1,17 @@
 import React from 'react'
 import Image from "next/image";
 import "../globals.css";
+import { useIdiomas } from '@/hooks/idiomas';
 
 type Props = {}
 
 export default function Products({}: Props) {
+  const t = useIdiomas({});
+
+
   return (
-    <section id="products">
-    <h2 className="text-4xl font-bold p-5">Our Products</h2>
+    <section id={t.id.products}>
+    <h2 className="text-4xl font-bold p-5">Our Works</h2>
     
     <div className="sm:flex">
     <Image
