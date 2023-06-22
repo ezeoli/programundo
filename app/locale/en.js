@@ -18,6 +18,7 @@ export default {
   
   welcome: {
     title: "Are you looking for a Website developers?",
+    subtitle: 'Here you will find the best design for your website and for your E-commerce',
     paragraph1: "We are a specialized team in web design. We combine our individual skills and experiences to offer you creative and personalized solutions. Whether you need an informative website, an online store, or an interactive platform, we will work with you at every stage of the design process. ",
     paragraph2: "Our priority is your satisfaction and the success of your business. We ensure that your website is visually appealing, functional, intuitive, and optimized. Trust us to provide you with a professional, modern, and customized web design that meets your needs and preferences.",
   },
