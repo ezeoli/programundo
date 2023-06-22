@@ -5,6 +5,7 @@ export default {
     products:'disenos_de_paginas_web',
     clients: 'clientes',
     contact: 'contacto',
+    carousel: 'carrousel',
   },
 
   navbar: [
@@ -17,6 +18,7 @@ export default {
 
   welcome: {
     title: "¿Estás buscando un diseñador de paginas web?",
+    subtitle: 'Aquí encontrarás el mejor diseño para tu sitio web y para tu E-commerce',
     paragraph1: "Somos un equipo especializado en diseño de páginas web. Unimos nuestras habilidades individuales y experiencias para ofrecerte soluciones creativas y personalizadas. Ya sea que necesites una página web informativa, una tienda en línea o una plataforma interactiva, trabajaremos contigo en cada etapa del proceso de diseño.",
     paragraph2: "Nuestra prioridad es tu satisfacción y el éxito de tu negocio. Nos aseguramos de que tu sitio web sea visualmente atractivo, funcional, intuitivo y optimizado. Confía en nosotros para obtener un diseño web profesional, moderno y adaptado a tus necesidades y preferencias.",
   },
@@ -121,7 +123,7 @@ export default {
 
   appSoft: {
     title: "APPS Y SOFTWARE A MEDIDA",
-    image: "/programundo2.jpg",
+    image: "/appSoft1.jpg",
     title1: "Creamos el software que necesites",
     descriptiont1:
       "Diseñamos y construimos software corporativo a medida. Creamos soluciones especialmente pensadas para optimizar los procesos propios de su empresa.",

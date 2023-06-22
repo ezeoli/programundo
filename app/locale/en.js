@@ -5,6 +5,7 @@ export default {
     products:'website_design',
     clients: 'clients',
     contact: 'contact',
+    carousel: 'carousel',
   },
 
   navbar: [
@@ -17,7 +18,8 @@ export default {
   
   welcome: {
     title: "Are you looking for a Website developers?",
-    paragraph1: "We are a specialized team in web design. We combine our individual skills and experiences to offer you creative and personalized solutions. Whether you need an informative website, an online store, ecommerce or an interactive platform, we will work with you at every stage of the design process. ",
+    subtitle: 'Here you will find the best design for your website and for your E-commerce',
+    paragraph1: "We are a specialized team in web design. We combine our individual skills and experiences to offer you creative and personalized solutions. Whether you need an informative website, an online store, or an interactive platform, we will work with you at every stage of the design process. ",
     paragraph2: "Our priority is your satisfaction and the success of your business. We ensure that your website is visually appealing, functional, intuitive, and optimized. Trust us to provide you with a professional, modern, and customized web design that meets your needs and preferences.",
   },
 
@@ -121,7 +123,7 @@ export default {
 
   appSoft: {
     title: "APPS Y SOFTWARE A MEDIDA",
-    image: "/programundo2.jpg",
+    image: "/appSoft1.jpg",
     title1: "Creamos el software que necesites",
     descriptiont1:
       "Diseñamos y construimos software corporativo a medida. Creamos soluciones especialmente pensadas para optimizar los procesos propios de su empresa.",
