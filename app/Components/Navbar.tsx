@@ -9,8 +9,6 @@ import logo from "../../public/Logo.png";
 type Props = {};
 
 export default function Navbar({}: Props) {
-
-  
   const t = useIdiomas({});
   let router = useRouter();
 
@@ -20,16 +18,18 @@ export default function Navbar({}: Props) {
     setNavbar(!navbar);
   };
 
-  const lang= <button onClick={handleLang}>
-  <Image
-    src={useRouter().locale === "es" ? t.lang : t.lang}
-    width={30}
-    height={30}
-    alt="idioma"
-    className="focus:border-none active:border-none"
-    aria-label="menu"
-    />
-</button>
+  const lang = (
+    <button onClick={handleLang}>
+      <Image
+        src={useRouter().locale === "es" ? t.lang : t.lang}
+        width={30}
+        height={30}
+        alt="idioma"
+        className="focus:border-none active:border-none"
+        aria-label="menu"
+      />
+    </button>
+  );
 
   const [navbar, setNavbar] = useState(false);
 
@@ -52,36 +52,33 @@ export default function Navbar({}: Props) {
                 </h2>
               </div>
               <div>
-              <div className="md:hidden">
-                {lang}
-                <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {navbar ? (
-                    <Image
-                      src="/Close.png"
-                      width={30}
-                      height={30}
-                      alt="close icon button"
-                      aria-label="close menu"
-                    />
-                  ) : (
-                    <Image
-                      src="/Menu.png"
-                      width={30}
-                      height={30}
-                      alt="menu icon button"
-                      className="focus:border-none active:border-none"
-                      aria-label="menu"
-                    />
-                  )}
-                </button>
-              
-              
-                  </div>
+                <div className="md:hidden">
+                  {lang}
+                  <button
+                    className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                    onClick={() => setNavbar(!navbar)}
+                  >
+                    {navbar ? (
+                      <Image
+                        src="/Close.png"
+                        width={30}
+                        height={30}
+                        alt="close icon button"
+                        aria-label="close menu"
+                      />
+                    ) : (
+                      <Image
+                        src="/Menu.png"
+                        width={30}
+                        height={30}
+                        alt="menu icon button"
+                        className="focus:border-none active:border-none"
+                        aria-label="menu"
+                      />
+                    )}
+                  </button>
+                </div>
               </div>
-
             </div>
           </>
           <div>
@@ -90,6 +87,19 @@ export default function Navbar({}: Props) {
               ${navbar ? "p-12 md:p-0 block" : "hidden"}`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex">
+                <select
+                  name=""
+                  id=""
+                  className="appearance-none bg-gray-500 pb-2 text-xl text-white py-2  md:px-4 text-center hover:bg-grey-500 md:hover:bg-grey-500 hover:text-black"
+                >
+                  <option disabled selected value="">
+                    Selecciona una opción
+                  </option>
+                  <option value="">UNO</option>
+                  <option value="">DOS</option>
+                  <option value="">TRES</option>
+                  <option value="">CUATRO</option>
+                </select>
                 {t.navbar.map((b: any) => (
                   <Link
                     href={b.href}
@@ -104,7 +114,8 @@ export default function Navbar({}: Props) {
                     </li>
                   </Link>
                 ))}
-              {lang}
+
+                {lang}
               </ul>
             </div>
           </div>
