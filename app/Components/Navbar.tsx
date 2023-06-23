@@ -19,7 +19,7 @@ export default function Navbar({}: Props) {
   };
 
   const lang = (
-    <button onClick={handleLang}>
+    <button onClick={handleLang} className="xs:Hidden">
       <Image
         src={useRouter().locale === "es" ? t.lang : t.lang}
         width={30}
