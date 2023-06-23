@@ -124,7 +124,7 @@ export default function Navbar({}: Props) {
                       >
                         <a
                           href="/webSite"
-                          className="block text-black font-normal text-base hover:text-white cursor-pointer"
+                          className="block text-white font-normal text-base hover:text-white cursor-pointer"
                           data-v-6dd71848=""
                         >
                           Sitios Web
@@ -136,7 +136,7 @@ export default function Navbar({}: Props) {
                       >
                         <a
                           href="/appSoft"
-                          className="block text-black font-normal text-base hover:text-white cursor-pointer"
+                          className="block text-white font-normal text-base hover:text-white cursor-pointer"
                           data-v-6dd71848=""
                         >
                           App y Software a medida
@@ -148,7 +148,7 @@ export default function Navbar({}: Props) {
                       >
                         <a
                           href="/seo"
-                          className="block text-black font-normal text-base hover:text-white cursor-pointer"
+                          className="block text-white font-normal text-base hover:text-white cursor-pointer"
                           data-v-6dd71848=""
                         >
                           Posicionamiento SEO
@@ -161,7 +161,7 @@ export default function Navbar({}: Props) {
                       >
                         <a
                           href="/ecommerce"
-                          className="block text-black font-normal text-base hover:text-white cursor-pointer"
+                          className="block text-white font-normal text-base hover:text-white cursor-pointer"
                           data-v-6dd71848=""
                         >
                           Ecommerce
