@@ -3,23 +3,24 @@ import "../globals.css";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useIdiomas } from "@/hooks/idiomas";
+import image1 from '../../public/programundo2.jpg'
+import image2 from '../../public/programundo3.jpg'
+import image3 from '../../public/programundo4.jpg'
 
 
 export default function Carrusel() {
   const t = useIdiomas({});
 
   const images = [
-    
-    "/programundo2.jpg",
-    "/programundo3.jpg",
-    "/programundo4.jpg",
+    image1,
+    image2,
+    image3,
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     let intervalId: NodeJS.Timeout | null = null;
-
     const startAutoRotate = () => {
       intervalId = setInterval(nextSlide, 5000); // Cambia el valor '5000' al intervalo deseado en milisegundos
     };
@@ -58,16 +59,15 @@ export default function Carrusel() {
 
   return (
     <>
-      <div id="default-carousel" className="relative w-full" data-carousel="slide" >
+      <div id={t.id.carousel} className="relative w-full " data-carousel="slide" >
         <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
           {images.map((image, index) => (
             <Image
               key={index}
               src={image}
               width={500}
-              height={500}
-              alt="programundo"
-              className={`absolute top-0 left-0 w-full h-full transition-opacity duration-500 ${
+              alt="programundo carrousel slides"
+              className={`absolute top-0 left-0 w-full h-fit transition-opacity duration-500 ${
                 index === currentIndex ? "opacity-100" : "opacity-0"
               }`}
             />
