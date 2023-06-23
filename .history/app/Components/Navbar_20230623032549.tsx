@@ -23,7 +23,7 @@ export default function Navbar({}: Props) {
 
   return (
     <React.Fragment>
-      <nav className="w-full  bg-gray-500 fixed top-0 left-0 right-0 z-10">
+      <nav className="w-full h-50 bg-gray-500 fixed top-0 left-0 right-0 z-10">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <>
             <div className="flex items-center justify-between py-3 md:py-4 md:block">
@@ -71,7 +71,7 @@ export default function Navbar({}: Props) {
               className={`flex-1 justify-self-center pb-3 mt-6 md:block md:pb-0 md:mt-0 
               ${navbar ? "p-12 md:p-0 block" : "hidden"}`}
             >
-              <ul className="h-screen  md:h-auto items-center justify-center md:flex">
+              <ul className="h-screen md:h-auto items-center justify-center md:flex">
                 {t.navbar.map((b: any) => (
                   <Link
                     href={b.href}

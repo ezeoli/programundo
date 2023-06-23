@@ -48,15 +48,15 @@ export default function appSoft({}: Props) {
           </a>
         </div>
       </div>
-      <div className="md:px-20 px-4 mx-auto bg-custom-background-image bg-cover bg-center min-h-screen contrast-125">
+      <div className="md:px-20 px-4 mx-auto bg-custom-background-image bg-cover bg-center min-h-screen contrast-300">
         <div className="mb-20 lg:mb-0 w-full lg:w-1/2">
           <div className="pb-14 xl:pb-20 mb-10 xl:mb-16 border-b border-gray-200">
-            <h2 className="font-heading font-medium  text-black text-7xl xl:text-8xl leading-snug">
+            <h2 className="font-heading font-medium  text-white text-7xl xl:text-8xl leading-snug">
             {t.appSoft.title2}
 
             </h2>
           </div>{" "}
-          <p className="mb-6 text-black text-lg leading-6 text-darkBlueGray-400">
+          <p className="mb-6 text-white text-lg leading-6 text-darkBlueGray-400">
           {t.appSoft.descriptiont2}
 
           </p>{" "}
@@ -64,25 +64,25 @@ export default function appSoft({}: Props) {
         </div>{" "}
         <ul className="mb-8">
           <li className="flex items-center mb-4">
-            <span className="text-md text-black md:text-md font-heading text-darkBlueGray-400">
+            <span className="text-md text-white md:text-md font-heading text-darkBlueGray-400">
              {t.appSoft.item1}
 
             </span>
           </li>{" "}
           <li className="flex items-center mb-4">
-            <span className="text-md text-black md:text-md font-heading text-darkBlueGray-400">
+            <span className="text-md text-white md:text-md font-heading text-darkBlueGray-400">
              {t.appSoft.item2}
 
             </span>
           </li>{" "}
           <li className="flex items-center mb-4">
-            <span className="text-md text-black md:text-md font-heading text-darkBlueGray-400">
+            <span className="text-md text-white md:text-md font-heading text-darkBlueGray-400">
             {t.appSoft.item3}
 
             </span>
           </li>{" "}
           <li className="flex items-center mb-4">
-            <span className="text-md text-black md:text-md font-heading text-darkBlueGray-400">
+            <span className="text-md text-white md:text-md font-heading text-darkBlueGray-400">
             {t.appSoft.item4}
 
             </span>
