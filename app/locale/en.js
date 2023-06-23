@@ -135,7 +135,7 @@ export default {
     item2: "Diseñamos una estrategia y un plan de desarrollo.",
     item3: "Implementamos el desarroll",
     item4: "Testeamos y lanzamos eL producto final.",
-    image2: "/programundo2.jpg",
+    image2: "/apps.png",
     button2: "Pedinos un presupuesto"
   },
 };
