@@ -185,8 +185,9 @@ export default function Navbar({}: Props) {
                     </li>
                   </Link>
                 ))}
-
+                <div className="xs:hidden lg:block">
                 {lang}
+                </div>
               </ul>
             </div>
           </div>
