@@ -11,7 +11,7 @@ export default function About({}: Props) {
 
   return (
     <section id={t.id.about}>
-      <h2 className="text-5xl font-bold px-10 py-20  ">{t.about.title}</h2>{" "}
+      <h2 className="text-5xl font-bold px-10 py-20  ">{t.about.title}</h2>
       <div className="grid lg:grid-cols-2 lg:items-center gap-14 lg:gap-16 xl:gap-34  mx-8">
         <img
           src={t.about.image}
@@ -21,7 +21,7 @@ export default function About({}: Props) {
         <div className="lg:max-w-lg">
           <p className="text-lg  text-darkBlueGray-400 ml-5 leading-loose">
             {t.about.description}
-          </p>{" "}
+          </p>
         </div>
       </div>
     </section>

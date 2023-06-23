@@ -14,6 +14,16 @@ export default {
     {href:'/#clientes', button: "CLIENTES"},
     {href:'/#contacto', button: "CONTACTO"},
   ],
+
+  service:"SERVICIOS",
+
+  services:[
+    {href:'/webSite', button: "Paginas Web"},
+    {href:'/appSoft', button: "Aplicaciones Web"},
+    {href:'/seo', button: "Posicionamiento SEO"},
+    {href:'/ecommerce', button: "Ecommerce"},
+  ],
+  
   lang:"/ingles.png",
 
   welcome: {
@@ -28,7 +38,7 @@ export default {
     image: "/programundo2.jpg",
     description:
       "Esta es la sección Acerca de. Cuidémonos del dolor en sí, lo seguirá la élite adipiscente. El dolor de las cosas pasará, el vuelo del presente será más duro, se suavizarán y el dolor será seguido por algunos, y tiempos similares son cegados por el arquitecto, en el momento del nacimiento abriré el todo",
-    buttonContact: "Contacto",
+    buttonContact: "CONTACTO",
   },
 
   contact: {
@@ -99,6 +109,7 @@ export default {
     item1: "AUMENTÁ LA VISIBILIDAD DE TU NEGOCIO",
     item2: "REDUCI LOS COSTOS DE TUS CAMPAÑAS",
     item3: "RECIBÍ TRÁFICO CUALIFICADO EN TU PÁGINA WEB",
+
     item4: "SUPERA A TU COMPETENCIA Y AUMENTA LAS VENTAS",
     image2: "/programundo2.jpg",
     button2: "Pedinos un presupuesto"
@@ -138,4 +149,5 @@ export default {
     image2: "/apps.png",
     button2: "Pedinos un presupuesto"
   },
+  
 };

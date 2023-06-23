@@ -32,7 +32,7 @@ export default function Footer({}: Props) {
           
           {/* Links */}
           <div id="footer_links_div" className="w-full md:w-1/4 lg:w-2/12 px-4 mb-16 lg:mb-0">
-            <h3 id="footer_links_h3" className="mb-5 text-lg font-bold text-gray-900">Links</h3>{" "}
+            <h3 id="footer_links_h3" className="mb-5 text-lg font-bold text-gray-900">Links</h3>
             <ul id="footer_links">
               {footer?.links?.map((l) => (
                 <>
@@ -52,7 +52,7 @@ export default function Footer({}: Props) {
 
           {/* services */}
           <div id="footer_services_div" className="w-full md:w-1/4 lg:w-2/12 px-4 mb-16 lg:mb-0">
-            <h3 id="footer_services_h3" className="mb-5 text-lg font-bold text-gray-900">Services</h3>{" "}
+            <h3 id="footer_services_h3" className="mb-5 text-lg font-bold text-gray-900">Services</h3>
             <ul id="footer_services">
               {footer?.services?.map((l) => (
                 <>
@@ -69,7 +69,7 @@ export default function Footer({}: Props) {
                 </>
               ))}
             </ul>
-          </div>{" "}
+          </div>
           
           {/*  Newsletter  */}
          <Newsletter/>

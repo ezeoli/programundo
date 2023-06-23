@@ -14,6 +14,16 @@ export default {
     {href:'/#clients', button: "CLIENTS"},
     {href:'/#contact', button: "CONTACT"},
   ],
+  
+  service:"SERVICES",
+
+  services:[
+    {href:'/webSite', button: "Websites"},
+    {href:'/appSoft', button: "Web Aplication Development"},
+    {href:'/seo', button: "Seo positioning"},
+    {href:'/ecommerce', button: "Ecommerce"},
+  ],
+
   lang:"/españa.png",
   
   welcome: {
@@ -28,7 +38,7 @@ export default {
     image:"/programundo2.jpg",
     description:
       "This is the About section. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem rerum eveniet fuga praesentium asperiores eos deleniti doloremque quibusdam consectetur sunt similique tempora architecto obcaecati maiores, tempore natus aperiam ipsum totam.",
-    buttonContact: "Contact",
+    buttonContact: "CONTACT",
   },
 
   contact: {
@@ -138,4 +148,6 @@ export default {
     image2: "/apps.png",
     button2: "Pedinos un presupuesto"
   },
+  
+
 };
