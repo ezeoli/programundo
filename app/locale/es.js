@@ -14,6 +14,12 @@ export default {
     {href:'/#clientes', button: "CLIENTES"},
     {href:'/#contacto', button: "CONTACTO"},
   ],
+  services:[
+    {href:'/webSite', button: "Paginas Web"},
+    {href:'/appSoft', button: "Aplicaciones Web"},
+    {href:'/seo', button: "Posicionamiento SEO"},
+    {href:'/ecommerce', button: "Ecommerce"},
+  ],
   lang:"/ingles.png",
 
   welcome: {
@@ -99,6 +105,7 @@ export default {
     item1: "AUMENTÁ LA VISIBILIDAD DE TU NEGOCIO",
     item2: "REDUCI LOS COSTOS DE TUS CAMPAÑAS",
     item3: "RECIBÍ TRÁFICO CUALIFICADO EN TU PÁGINA WEB",
+
     item4: "SUPERA A TU COMPETENCIA Y AUMENTA LAS VENTAS",
     image2: "/programundo2.jpg",
     button2: "Pedinos un presupuesto"
@@ -138,4 +145,5 @@ export default {
     image2: "/apps.png",
     button2: "Pedinos un presupuesto"
   },
+  
 };

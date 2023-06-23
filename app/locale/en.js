@@ -14,6 +14,12 @@ export default {
     {href:'/#clients', button: "CLIENTS"},
     {href:'/#contact', button: "CONTACT"},
   ],
+  services:[
+    {href:'/webSite', button: "WEBSITES"},
+    {href:'/appSoft', button: "WEB APPLICATION DEVELOPMENT"},
+    {href:'/seo', button: "SEO POSITIONING"},
+    {href:'/ecommerce', button: "ECOMMERCE"},
+  ],
   lang:"/españa.png",
   
   welcome: {
@@ -138,4 +144,6 @@ export default {
     image2: "/apps.png",
     button2: "Pedinos un presupuesto"
   },
+  
+
 };

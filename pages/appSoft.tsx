@@ -26,10 +26,10 @@ export default function appSoft({}: Props) {
           <div className="lg:max-w-lg">
             <h2 className="mb-10 font-heading font-medium text-4xl xl:text-5xl leading-snug">
               {t.appSoft.title1}
-            </h2>{" "}
+            </h2>
             <p className="mb-6 text-lg leading-6 text-darkBlueGray-400">
               {t.appSoft.descriptiont1}
-            </p>{" "}
+            </p>
             <a
               href="/#Contact"
               className="mb-6 mt-3 px-2 py-2 w-48 bg-primary border-b border-gray-100 text-white hover:bg-secondary rounded text-sm text-center items-center font-semibold drop-shadow-lg"
@@ -57,22 +57,22 @@ export default function appSoft({}: Props) {
                 <span className="text-md md:text-md font-heading text-darkBlueGray-400">
                   {t.appSoft.item1}
                 </span>
-              </li>{" "}
+              </li>
               <li className="flex items-center mb-4">
                 <span className="text-md md:text-md font-heading text-darkBlueGray-400">
                   {t.appSoft.item2}
                 </span>
-              </li>{" "}
+              </li>
               <li className="flex items-center mb-4">
                 <span className="text-md md:text-md font-heading text-darkBlueGray-400">
                   {t.appSoft.item3}
                 </span>
-              </li>{" "}
+              </li>
               <li className="flex items-center mb-4">
                 <span className="text-md md:text-md font-heading text-darkBlueGray-400">
                   {t.appSoft.item4}
                 </span>
-              </li>{" "}
+              </li>
             </ul>
               <div className="mt-10 px-4">
               <a
@@ -88,7 +88,7 @@ export default function appSoft({}: Props) {
           <div className="mb-20">
             <div className="md:mt-8 xl:mt-32">
               <img src={t.appSoft.image2} alt="" className="rounded-md" />
-            </div>{" "}
+            </div>
           
           </div>
         </div>
