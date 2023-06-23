@@ -42,13 +42,13 @@ export default function Footer({}: Props) {
               className="mb-5 text-lg font-bold text-gray-900"
             >
             {t.footer.title1}
-            </h3>{" "}
+            </h3>
             <ul id="footer_links">
               {t.footer.links1.map((l:any)=>
               <React.Fragment key={l.name}>
               <li key={l.href} className="mb-4">
                 <div>
-                  {" "}
+                  
                   <Link
                     href=  {`${useRouter().locale}${l.href}`}
                     aria-current="page"
@@ -89,7 +89,7 @@ export default function Footer({}: Props) {
                 </React.Fragment>
               ))}
             </ul>
-          </div>{" "}
+          </div>
           {/*  Newsletter  */}
           <Newsletter />
         </div>

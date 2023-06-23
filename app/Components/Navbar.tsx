@@ -92,7 +92,7 @@ export default function Navbar({}: Props) {
                     className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black"
                     data-v-6dd71848=""
                   >
-                    SERVICIOS{" "}
+                    SERVICIOS
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -109,8 +109,28 @@ export default function Navbar({}: Props) {
                         data-v-6dd71848=""
                       ></path>
                     </svg>
-                  </a>{" "}
-                  <div
+                  </a>
+                  
+                  <div className="z-30 rounded-lg group-hover:block dropdown-menu absolute hidden h-auto" >
+                    <ul className="top-2 w-48 bg-gray-500 shadow py-2 rounded-xl">
+                        {t.services.map((b:any)=>(
+                          <Link
+                            href={b.href}
+                            onClick={() => setNavbar(!navbar)}
+                            key={b.button}
+                            className= "block text-white font-normal text-base hover:text-white cursor-pointer"
+                          >
+                          <li
+                              className="hover:bg-primary py-2 px-4 block whitespace-no-wrap"
+                              aria-label={b.button}>
+                              {b.button}
+                          </li>
+                          </Link>
+                        ))}
+                    </ul>
+                  </div>
+                  
+                  {/* <div
                     className="z-30 rounded-lg group-hover:block dropdown-menu absolute hidden h-auto"
                     data-v-6dd71848=""
                   >
@@ -118,6 +138,8 @@ export default function Navbar({}: Props) {
                       className="top-2 w-48 bg-gray-500 shadow py-2 rounded-xl"
                       data-v-6dd71848=""
                     >
+
+
                       <li
                         className="hover:bg-primary py-2 px-4 block whitespace-no-wrap"
                         data-v-6dd71848=""
@@ -129,7 +151,7 @@ export default function Navbar({}: Props) {
                         >
                           Sitios Web
                         </a>
-                      </li>{" "}
+                      </li>
                       <li
                         className="hover:bg-primary py-2 px-4 block whitespace-no-wrap"
                         data-v-6dd71848=""
@@ -141,7 +163,7 @@ export default function Navbar({}: Props) {
                         >
                           App y Software a medida
                         </a>
-                      </li>{" "}
+                      </li>
                       <li
                         className="hover:bg-primary py-2 px-4 block whitespace-no-wrap"
                         data-v-6dd71848=""
@@ -153,7 +175,7 @@ export default function Navbar({}: Props) {
                         >
                           Posicionamiento SEO
                         </a>
-                      </li>{" "}
+                      </li>
                       
                       <li
                         className="hover:bg-primary py-2 px-4 block whitespace-no-wrap"
@@ -166,10 +188,10 @@ export default function Navbar({}: Props) {
                         >
                           Ecommerce
                         </a>
-                      </li>{" "}
+                      </li>
                      
                     </ul>
-                  </div>
+                  </div> */}
                 </li>
                 {t.navbar.map((b: any) => (
                   <Link

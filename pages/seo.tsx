@@ -19,7 +19,7 @@ export default function seo({}: Props) {
           {t.seo.title}
 
         </a>
-      </div>{" "}
+      </div>
       <div className="grid lg:grid-cols-2 lg:items-center gap-14 lg:gap-16 xl:gap-44 mt-20">
         <Image
           src={t.seo.image}
@@ -28,16 +28,16 @@ export default function seo({}: Props) {
           height={400}
           alt=""
           className="rounded-md"
-        />{" "}
+        />
         <div className="lg:max-w-lg">
           <h2 className="mb-10 font-heading font-medium text-4xl xl:text-5xl leading-snug">
           {t.seo.title1}
 
-          </h2>{" "}
+          </h2>
           <p className="mb-6 text-lg leading-6 text-darkBlueGray-400">
           {t.seo.descriptiont1}
 
-          </p>{" "}
+          </p>
           <a
            href="/#Contact"
             className="mb-6 mt-3 px-2 py-2 w-48 bg-[#BB2649] border-b border-gray-100 text-white hover:bg-[#A8133A] rounded text-sm text-center items-center font-semibold drop-shadow-lg"
@@ -54,29 +54,29 @@ export default function seo({}: Props) {
             {t.seo.title2}
 
             </h2>
-          </div>{" "}
+          </div>
           <div className="flex items-center"></div>
-        </div>{" "}
+        </div>
         <ul className="mb-8">
           <li className="flex items-center mb-4">
             <span className="text-md md:text-md font-heading text-darkBlueGray-400">
              {t.seo.item1}
 
             </span>
-          </li>{" "}
+          </li>
           <li className="flex items-center mb-4">
             <span className="text-md md:text-md font-heading text-darkBlueGray-400">
              {t.seo.item2}
 
             </span>
-          </li>{" "}
+          </li>
           <li className="flex items-center mb-4">
             <span className="text-md md:text-md font-heading text-darkBlueGray-400">
             {t.seo.item3}
 
             </span>
-          </li>{" "}
-        </ul>{" "}
+          </li>
+        </ul>
         <div className="relative lg:relative top-0 right-0 lg:mt-12 lg:w-1/2">
           <Image
             src={t.seo.image2}
@@ -86,7 +86,7 @@ export default function seo({}: Props) {
             alt=""
             className="w-full md:mt-48 mt-10 md:px-20 px-4"
           />
-        </div>{" "}
+        </div>
         <div className="mt-10 px-4">
           <a
            href="/#Contact"
