@@ -19,7 +19,7 @@ export default function Navbar({}: Props) {
   };
 
   const lang = (
-    <button onClick={handleLang} className="xs:hidden">
+    <button onClick={handleLang}>
       <Image
         src={useRouter().locale === "es" ? t.lang : t.lang}
         width={30}
@@ -90,7 +90,7 @@ export default function Navbar({}: Props) {
                 <select
                   name=""
                   id=""
-                  className="appearance-none bg-gray-500 pb-2 text-xl text-white py-2  md:px-4 text-center hover:bg-grey-500 md:hover:bg-grey-500 hover:text-black"
+                  className="bg-gray-500 pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-grey-500 md:hover:bg-grey-500 hover:text-black"
                 >
                   <option disabled selected value="">
                     Selecciona una opción
@@ -114,8 +114,9 @@ export default function Navbar({}: Props) {
                     </li>
                   </Link>
                 ))}
-
+                <div className="xs:hidden lg:block">
                 {lang}
+                </div>
               </ul>
             </div>
           </div>
