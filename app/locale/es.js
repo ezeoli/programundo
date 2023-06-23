@@ -14,12 +14,16 @@ export default {
     {href:'/#clientes', button: "CLIENTES"},
     {href:'/#contacto', button: "CONTACTO"},
   ],
+
+  service:"SERVICIOS",
+
   services:[
     {href:'/webSite', button: "Paginas Web"},
     {href:'/appSoft', button: "Aplicaciones Web"},
     {href:'/seo', button: "Posicionamiento SEO"},
     {href:'/ecommerce', button: "Ecommerce"},
   ],
+  
   lang:"/ingles.png",
 
   welcome: {
@@ -34,7 +38,7 @@ export default {
     image: "/programundo2.jpg",
     description:
       "Esta es la sección Acerca de. Cuidémonos del dolor en sí, lo seguirá la élite adipiscente. El dolor de las cosas pasará, el vuelo del presente será más duro, se suavizarán y el dolor será seguido por algunos, y tiempos similares son cegados por el arquitecto, en el momento del nacimiento abriré el todo",
-    buttonContact: "Contacto",
+    buttonContact: "CONTACTO",
   },
 
   contact: {

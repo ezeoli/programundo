@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import "../globals.css";
 import React, { useState } from "react";
+import { SlArrowDown } from 'react-icons/sl';
 import { useIdiomas } from "@/hooks/idiomas";
 import { useRouter } from "next/router";
 import logo from "../../public/Logo.png";
@@ -87,30 +88,11 @@ export default function Navbar({}: Props) {
               ${navbar ? "p-12 md:p-0 block" : "hidden"}`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex">
-                <li className="group relative dropdown" data-v-6dd71848="">
+                <li className="group relative dropdown">
                   <a
-                    className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black"
-                    data-v-6dd71848=""
-                  >
-                    SERVICIOS
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      className="w-4 h-4 inline-block"
-                      data-v-6dd71848=""
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                        data-v-6dd71848=""
-                      ></path>
-                    </svg>
+                    className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black flex gap-2 items-center" >
+                    {t.service} <SlArrowDown/>
                   </a>
-                  
                   <div className="z-30 rounded-lg group-hover:block dropdown-menu absolute hidden h-auto" >
                     <ul className="top-2 w-48 bg-gray-500 shadow py-2 rounded-xl">
                         {t.services.map((b:any)=>(
@@ -129,69 +111,6 @@ export default function Navbar({}: Props) {
                         ))}
                     </ul>
                   </div>
-                  
-                  {/* <div
-                    className="z-30 rounded-lg group-hover:block dropdown-menu absolute hidden h-auto"
-                    data-v-6dd71848=""
-                  >
-                    <ul
-                      className="top-2 w-48 bg-gray-500 shadow py-2 rounded-xl"
-                      data-v-6dd71848=""
-                    >
-
-
-                      <li
-                        className="hover:bg-primary py-2 px-4 block whitespace-no-wrap"
-                        data-v-6dd71848=""
-                      >
-                        <a
-                          href="/webSite"
-                          className="block text-white font-normal text-base hover:text-white cursor-pointer"
-                          data-v-6dd71848=""
-                        >
-                          Sitios Web
-                        </a>
-                      </li>
-                      <li
-                        className="hover:bg-primary py-2 px-4 block whitespace-no-wrap"
-                        data-v-6dd71848=""
-                      >
-                        <a
-                          href="/appSoft"
-                          className="block text-white font-normal text-base hover:text-white cursor-pointer"
-                          data-v-6dd71848=""
-                        >
-                          App y Software a medida
-                        </a>
-                      </li>
-                      <li
-                        className="hover:bg-primary py-2 px-4 block whitespace-no-wrap"
-                        data-v-6dd71848=""
-                      >
-                        <a
-                          href="/seo"
-                          className="block text-white font-normal text-base hover:text-white cursor-pointer"
-                          data-v-6dd71848=""
-                        >
-                          Posicionamiento SEO
-                        </a>
-                      </li>
-                      
-                      <li
-                        className="hover:bg-primary py-2 px-4 block whitespace-no-wrap"
-                        data-v-6dd71848=""
-                      >
-                        <a
-                          href="/ecommerce"
-                          className="block text-white font-normal text-base hover:text-white cursor-pointer"
-                          data-v-6dd71848=""
-                        >
-                          Ecommerce
-                        </a>
-                      </li>
-                     
-                    </ul>
-                  </div> */}
                 </li>
                 {t.navbar.map((b: any) => (
                   <Link
@@ -207,7 +126,7 @@ export default function Navbar({}: Props) {
                     </li>
                   </Link>
                 ))}
-                <div className="xs:hidden lg:block">
+                <div className="xs:hidden lg:block items-center">
                 {lang}
                 </div>
               </ul>
