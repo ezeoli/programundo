@@ -87,7 +87,7 @@ export default function Navbar({}: Props) {
               className={`flex-1 justify-self-center pb-3 mt-6 md:block md:pb-0 md:mt-0 
               ${navbar ? "p-12 md:p-0 block" : "hidden"}`}
             >
-              <ul className="Flex md:flex-col h-screen md:h-auto items-center justify-center">
+              <ul className="flex md:flex-col h-screen md:h-auto items-center justify-center">
                 <li className="group relative dropdown">
                   <a
                     className=" pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black flex gap-2 items-center" >
