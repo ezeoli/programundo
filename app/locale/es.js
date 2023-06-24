@@ -5,6 +5,7 @@ export default {
     products:'disenos_de_paginas_web',
     clients: 'clientes',
     contact: 'contacto',
+    carousel: 'carrousel',
   },
 
   navbar: [
@@ -13,10 +14,21 @@ export default {
     {href:'/#clientes', button: "CLIENTES"},
     {href:'/#contacto', button: "CONTACTO"},
   ],
+
+  service:"SERVICIOS",
+
+  services:[
+    {href:'/webSite', button: "Paginas Web"},
+    {href:'/appSoft', button: "Aplicaciones Web"},
+    {href:'/seo', button: "Posicionamiento SEO"},
+    {href:'/ecommerce', button: "Ecommerce"},
+  ],
+  
   lang:"/ingles.png",
 
   welcome: {
     title: "¿Estás buscando un diseñador de paginas web?",
+    subtitle: 'Aquí encontrarás el mejor diseño para tu sitio web y para tu E-commerce',
     paragraph1: "Somos un equipo especializado en diseño de páginas web. Unimos nuestras habilidades individuales y experiencias para ofrecerte soluciones creativas y personalizadas. Ya sea que necesites una página web informativa, una tienda en línea o una plataforma interactiva, trabajaremos contigo en cada etapa del proceso de diseño.",
     paragraph2: "Nuestra prioridad es tu satisfacción y el éxito de tu negocio. Nos aseguramos de que tu sitio web sea visualmente atractivo, funcional, intuitivo y optimizado. Confía en nosotros para obtener un diseño web profesional, moderno y adaptado a tus necesidades y preferencias.",
   },
@@ -26,7 +38,7 @@ export default {
     image: "/programundo2.jpg",
     description:
       "Esta es la sección Acerca de. Cuidémonos del dolor en sí, lo seguirá la élite adipiscente. El dolor de las cosas pasará, el vuelo del presente será más duro, se suavizarán y el dolor será seguido por algunos, y tiempos similares son cegados por el arquitecto, en el momento del nacimiento abriré el todo",
-    buttonContact: "Contacto",
+    buttonContact: "CONTACTO",
   },
 
   contact: {
@@ -97,6 +109,7 @@ export default {
     item1: "AUMENTÁ LA VISIBILIDAD DE TU NEGOCIO",
     item2: "REDUCI LOS COSTOS DE TUS CAMPAÑAS",
     item3: "RECIBÍ TRÁFICO CUALIFICADO EN TU PÁGINA WEB",
+
     item4: "SUPERA A TU COMPETENCIA Y AUMENTA LAS VENTAS",
     image2: "/programundo2.jpg",
     button2: "Pedinos un presupuesto"
@@ -121,7 +134,7 @@ export default {
 
   appSoft: {
     title: "APPS Y SOFTWARE A MEDIDA",
-    image: "/programundo2.jpg",
+    image: "/appSoft1.jpg",
     title1: "Creamos el software que necesites",
     descriptiont1:
       "Diseñamos y construimos software corporativo a medida. Creamos soluciones especialmente pensadas para optimizar los procesos propios de su empresa.",
@@ -133,7 +146,8 @@ export default {
     item2: "Diseñamos una estrategia y un plan de desarrollo.",
     item3: "Implementamos el desarroll",
     item4: "Testeamos y lanzamos eL producto final.",
-    image2: "/programundo2.jpg",
+    image2: "/apps.png",
     button2: "Pedinos un presupuesto"
   },
+  
 };

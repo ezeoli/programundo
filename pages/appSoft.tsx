@@ -8,11 +8,11 @@ import "../app/globals.css";
 type Props = {};
 
 export default function appSoft({}: Props) {
-
-    const t = useIdiomas({});
+  const t = useIdiomas({});
 
   return (
     <>
+<<<<<<< HEAD
     <Navbar/>
     <div className="md:px-20 px-4 mx-auto ">
       <div className="mt-20 text-center ">
@@ -53,8 +53,25 @@ export default function appSoft({}: Props) {
           <div className="pb-14 xl:pb-20 mb-10 xl:mb-16 border-b border-gray-200">
             <h2 className="font-heading font-medium  text-black text-7xl xl:text-8xl leading-snug">
             {t.appSoft.title2}
+=======
+      <Navbar />
+      <div className="md:px-20 pb-20 mx-auto">
+        <div className="mt-28 text-center">
+          <a className="mb-5 py-20 block font-medium uppercase tracking-widest text-xl leading-4 text-gray-500">
+            {t.appSoft.title}
+          </a>
+        </div>
+>>>>>>> db43dacbf478c770149a4861c7e16050804699be
 
+        <div className="grid lg:grid-cols-2 lg:items-center gap-14 lg:gap-16 xl:gap-44  mx-8">
+          
+          <img src={t.appSoft.image} alt="" className=" rounded-md" />
+
+          <div className="lg:max-w-lg">
+            <h2 className="mb-10 font-heading font-medium text-4xl xl:text-5xl leading-snug">
+              {t.appSoft.title1}
             </h2>
+<<<<<<< HEAD
           </div>{" "}
           <p className="mb-6 text-black text-lg leading-6 text-darkBlueGray-400">
           {t.appSoft.descriptiont2}
@@ -105,10 +122,75 @@ export default function appSoft({}: Props) {
           >
             {t.appSoft.button2}
           </a>
+=======
+            <p className="mb-6 text-lg leading-6 text-darkBlueGray-400">
+              {t.appSoft.descriptiont1}
+            </p>
+            <a
+              href="/#Contact"
+              className="mb-6 mt-3 px-2 py-2 w-48 bg-primary border-b border-gray-100 text-white hover:bg-secondary rounded text-sm text-center items-center font-semibold drop-shadow-lg"
+            >
+              {t.appSoft.button1}
+            </a>
+          </div>
+        </div>
+
+        <div className="grid lg:grid-cols-2 lg:items-center gap-14 lg:gap-16 xl:gap-44 mt-20 mx-20">
+          <div className="">
+            <div className="">
+              <div className="pb-14 xl:pb-10 mb-10 xl:mb-6 mt-32 ">
+                <h2 className="font-heading font-medium text-4xl xl:text-5xl leading-snug ">
+                  {t.appSoft.title2}
+                </h2>
+              </div>
+              <p className="mb-6 text-lg leading-6 text-darkBlueGray-400">
+                {t.appSoft.descriptiont2}
+              </p>
+              <div className="flex items-center"></div>
+            </div>
+            <ul className="mb-8">
+              <li className="flex items-center mb-4">
+                <span className="text-md md:text-md font-heading text-darkBlueGray-400">
+                  {t.appSoft.item1}
+                </span>
+              </li>
+              <li className="flex items-center mb-4">
+                <span className="text-md md:text-md font-heading text-darkBlueGray-400">
+                  {t.appSoft.item2}
+                </span>
+              </li>
+              <li className="flex items-center mb-4">
+                <span className="text-md md:text-md font-heading text-darkBlueGray-400">
+                  {t.appSoft.item3}
+                </span>
+              </li>
+              <li className="flex items-center mb-4">
+                <span className="text-md md:text-md font-heading text-darkBlueGray-400">
+                  {t.appSoft.item4}
+                </span>
+              </li>
+            </ul>
+              <div className="mt-10 px-4">
+              <a
+                href="/#Contact"
+                className="mb-6 md:mt-3 md:px-2 px-4 py-2 w-48 bg-primary border-b border-gray-100 text-white hover:bg-secondary rounded text-sm text-center items-center font-semibold drop-shadow-lg"
+              >
+                {t.appSoft.button2}
+              </a>
+            </div>
+          </div>
+          
+          
+          <div className="mb-20">
+            <div className="md:mt-8 xl:mt-32">
+              <img src={t.appSoft.image2} alt="" className="rounded-md" />
+            </div>
+          
+          </div>
+>>>>>>> db43dacbf478c770149a4861c7e16050804699be
         </div>
       </div>
-    </div>
-    <Footer/>
+      <Footer />
     </>
   );
 }
