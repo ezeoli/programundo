@@ -8,7 +8,7 @@ import React from "react";
 type Props = {};
 
 export default function webSite({}: Props) {
-
+ 
     const t = useIdiomas({});
 
   return (
