@@ -19,6 +19,7 @@ export default function Navbar({}: Props) {
     setNavbar(!navbar);
   };
 
+
   const lang = (
     <button onClick={handleLang}>
       <Image
@@ -87,7 +88,7 @@ export default function Navbar({}: Props) {
               className={`flex-1 justify-self-center pb-3 mt-6 md:block md:pb-0 md:mt-0 
               ${navbar ? "p-12 md:p-0 block" : "hidden"}`}
             >
-              <ul className="flex flex-col md:flex-row h-screen md:h-auto justify-center items-center">
+              <ul className="flex flex-col md:flex-row h-screen md:h-auto md:justify-center items-center">
                 <li className="group relative dropdown">
                   <a
                     className=" pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black flex gap-2 items-center" >
@@ -126,7 +127,7 @@ export default function Navbar({}: Props) {
                     </li>
                   </Link>
                 ))}
-                <div className="xs:hidden lg:block items-center">
+                <div className="xs:hidden md:block items-center">
                 {lang}
                 </div>
               </ul>
