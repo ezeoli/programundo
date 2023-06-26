@@ -24,7 +24,7 @@ export default {
     {href:'/ecommerce', button: "Ecommerce"},
   ],
   
-  lang:"/ingles.png",
+  lang:"/ingle.png",
 
   welcome: {
     title: "¿Estás buscando un diseñador de paginas web?",
