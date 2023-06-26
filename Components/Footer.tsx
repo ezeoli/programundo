@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import "../globals.css";
+import "../app/globals.css";
 import Link from "next/link";
 import f from "../Data/Footer.json";
 import Newsletter from "./Newsletter";

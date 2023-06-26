@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import "../globals.css";
+import "../app/globals.css";
 import React, { useState } from "react";
 import { SlArrowDown } from 'react-icons/sl';
 import { useIdiomas } from "@/hooks/idiomas";
 import { useRouter } from "next/router";
-import logo from "../../public/Logo.png";
+import logo from "../public/Logo.png";
 
 type Props = {};
 

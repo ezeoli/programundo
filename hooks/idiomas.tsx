@@ -1,15 +1,14 @@
-import { useRouter } from 'next/router'
-import es from "../app/locale/es"
-import en from "../app/locale/en"
-
+import {useRouter} from 'next/router'
+import es from "../locale/es"
+import en from "../locale/en"
 
 type Props = {}
 
 function useIdiomas({}: Props) {
     const router = useRouter();
+    console.log('router:', router)
     const {locale} = router;
-    const t = locale === "es" ? es : en
-
+    let t = locale === "es" ? es : en
   return (
    t
   )

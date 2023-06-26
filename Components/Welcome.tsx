@@ -1,6 +1,6 @@
 import React from 'react'
 import { useIdiomas } from '@/hooks/idiomas';
-import "../globals.css";
+import "../app/globals.css";
 import Carrusel from './Carrusel';
 import Link from 'next/link';
 

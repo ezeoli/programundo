@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import "../globals.css";
+import "../app/globals.css";
 import { useRouter } from 'next/router';
 import { useIdiomas } from '@/hooks/idiomas';
 

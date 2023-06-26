@@ -1,11 +1,11 @@
-"use client"
-import "../globals.css";
+import "../app/globals.css";
+
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useIdiomas } from "@/hooks/idiomas";
-import image1 from '../../public/programundo2.jpg'
-import image2 from '../../public/programundo3.jpg'
-import image3 from '../../public/programundo4.jpg'
+import image1 from '../public/programundo2.jpg'
+import image2 from '../public/programundo3.jpg'
+import image3 from '../public/programundo4.jpg'
 
 
 export default function Carrusel() {

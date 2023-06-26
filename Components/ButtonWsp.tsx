@@ -1,3 +1,4 @@
+"use client"
 import { useIdiomas } from "@/hooks/idiomas";
 import Link from "next/link";
 import React, { useState } from "react";

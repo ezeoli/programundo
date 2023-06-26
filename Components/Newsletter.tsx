@@ -1,4 +1,4 @@
-import { useIdiomas } from '@/hooks/idiomas';
+import { useIdiomas } from '../hooks/idiomas';
 import React from 'react'
 
 type Props = {}

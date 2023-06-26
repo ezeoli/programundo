@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { useForm, ValidationError } from '@formspree/react';
-import "../globals.css";
+import "../app/globals.css";
 import contact from '../Data/contact.json'
 import { useIdiomas } from '@/hooks/idiomas';
 
