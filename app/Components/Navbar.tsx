@@ -38,7 +38,7 @@ export default function Navbar({}: Props) {
   return (
     <React.Fragment>
       <nav className="w-full bg-gray-500 fixed top-0 left-0 right-0 z-10 shadow-[0_30px_60px_-3px_rgba(0,0,0,0.5)]">
-        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <div className="justify-between  px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <>
             <div className="flex items-center justify-between py-3 md:py-4 md:block">
               <div className="flex flex-col align-center items-center">
@@ -127,7 +127,7 @@ export default function Navbar({}: Props) {
                     </li>
                   </Link>
                 ))}
-                <div className="xs:hidden md:block items-center">
+                <div className="xs:hidden md:block align-middle	">
                 {lang}
                 </div>
               </ul>

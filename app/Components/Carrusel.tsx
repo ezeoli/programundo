@@ -74,7 +74,7 @@ export default function Carrusel() {
           ))}
         </div>
 
-        <div className="absolute bottom-0 left-0 w-full h-8 bg-gray-900 bg-opacity-50">
+        <div className="absolute bottom-0 rounded-lg left-0 w-full h-8 bg-gray-900 bg-opacity-50">
           <ul className="flex justify-center space-x-2">
             {images.map((_, index) => (
               <li
