@@ -29,8 +29,8 @@ export default {
   welcome: {
     title: "¿Estás buscando un diseñador de paginas web?",
     subtitle: 'Aquí encontrarás el mejor diseño para tu sitio web y para tu E-commerce',
-    paragraph1: "¡Bienvenido a nuestra página web! Estamos emocionados de presentarte nuestros servicios y soluciones creativas para llevar tu presencia en línea al siguiente nivel.",
-    paragraph2: "Explora nuestra página web para conocer más sobre nuestro equipo, proyectos anteriores y los servicios que ofrecemos. Estamos ansiosos por colaborar con vos y ayudarte a destacar en el mundo digital. ¡Contáctanos hoy mismo y déjanos hacer realidad tus ideas y objetivos de diseño web!",
+    paragraph1: "Welcome to our website! We are excited to introduce you to our services and creative solutions to take your online presence to the next level.",
+    paragraph2: "Explore our website to learn more about our team, previous projects, and the services we offer. We are eager to collaborate with you and help you stand out in the digital world. Contact us today and let us bring your web design ideas and goals to life!",
     buttonContact: "CONTACTO"
   },
 
