@@ -29,16 +29,17 @@ export default {
   welcome: {
     title: "¿Estás buscando un diseñador de paginas web?",
     subtitle: 'Aquí encontrarás el mejor diseño para tu sitio web y para tu E-commerce',
-    paragraph1: "Somos un equipo especializado en diseño de páginas web. Unimos nuestras habilidades individuales y experiencias para ofrecerte soluciones creativas y personalizadas. Ya sea que necesites una página web informativa, una tienda en línea o una plataforma interactiva, trabajaremos contigo en cada etapa del proceso de diseño.",
-    paragraph2: "Nuestra prioridad es tu satisfacción y el éxito de tu negocio. Nos aseguramos de que tu sitio web sea visualmente atractivo, funcional, intuitivo y optimizado. Confía en nosotros para obtener un diseño web profesional, moderno y adaptado a tus necesidades y preferencias.",
+    paragraph1: "Welcome to our website! We are excited to introduce you to our services and creative solutions to take your online presence to the next level.",
+    paragraph2: "Explore our website to learn more about our team, previous projects, and the services we offer. We are eager to collaborate with you and help you stand out in the digital world. Contact us today and let us bring your web design ideas and goals to life!",
+    buttonContact: "CONTACTO"
   },
 
   about: {
-    title: "Acerca de nosotros",
-    image: "/programundo2.jpg",
-    description:
-      "Esta es la sección Acerca de. Cuidémonos del dolor en sí, lo seguirá la élite adipiscente. El dolor de las cosas pasará, el vuelo del presente será más duro, se suavizarán y el dolor será seguido por algunos, y tiempos similares son cegados por el arquitecto, en el momento del nacimiento abriré el todo",
-    buttonContact: "CONTACTO",
+    title: "¿ QUIENES SOMOS ?",
+    subtitle: 'Somos un equipo especializado en diseño de páginas web. ',
+    paragraph1: "Unimos nuestras habilidades individuales y experiencias para ofrecerte soluciones creativas y personalizadas. Ya sea que necesites una página web informativa, una tienda en línea o una plataforma interactiva, trabajaremos contigo en cada etapa del proceso de diseño.",
+    paragraph2: "Nuestra prioridad es tu satisfacción y el éxito de tu negocio. Nos aseguramos de que tu sitio web sea visualmente atractivo, funcional, intuitivo y optimizado. Confía en nosotros para obtener un diseño web profesional, moderno y adaptado a tus necesidades y preferencias.",
+    buttonMore: "MAS...",
   },
 
   contact: {
