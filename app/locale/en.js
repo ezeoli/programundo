@@ -31,7 +31,7 @@ export default {
     subtitle: 'Here you will find the best design for your website and for your E-commerce',
     paragraph1: "We are a specialized team in web design. We combine our individual skills and experiences to offer you creative and personalized solutions. Whether you need an informative website, an online store, or an interactive platform, we will work with you at every stage of the design process. ",
     paragraph2: "Our priority is your satisfaction and the success of your business. We ensure that your website is visually appealing, functional, intuitive, and optimized. Trust us to provide you with a professional, modern, and customized web design that meets your needs and preferences.",
-    buttonContact: "CONTACT",
+    button: "CONTACT",
   },
 
   about: {
@@ -39,8 +39,23 @@ export default {
     subtitle: 'We are a specialized team in websites design.',
     paragraph1: "We combine our individual skills and experiences to offer you creative and personalized solutions. Whether you need an informative website, an online store, or an interactive platform, we will work with you at every stage of the design process.",
     paragraph2: "Our priority is your satisfaction and the success of your business. We ensure that your website is visually appealing, functional, intuitive, and optimized. Trust us to provide you with a professional, modern, and tailored web design that meets your needs and preferences.",
-    buttonMore: "MORE...",
+    button: "MORE...",
   },
+
+  products: {
+    title: "WORKS",
+    subtitle: 'Some websites designs',
+    paragraph1: "Understanding unique client needs, we provide personalized solutions that adapt to their goals and preferences. By diversifying our work, we stay up-to-date with the latest trends and technologies, delivering modern and cutting-edge solutions.",
+    paragraph2: "We value accessibility and usability, creating intuitive and user-friendly websites. Our designs adapt to different industries, exceeding client expectations. Whether it's an elegant or bold design, we're prepared to deliver high-quality results. ",
+    button: "CONTACT",
+  },
+
+  works:[
+    {href:'https://pf-07-e-commerce-front.vercel.app/sneakers', button: "SNEAKERS", imagen:'/Home.png'},
+    {href:'https://gtg-henry-pi-client.vercel.app/countries', button: "COUNTRIES", imagen:'/countries.png'},
+    {href:'/seo', button: "SEO", imagen:'/Home.png'},
+    {href:'/ecommerce', button: "ECOMMERCE", imagen:'/Home.png'},
+  ],
 
   contact: {
     title: "Do you want your own website?",

@@ -3,7 +3,7 @@ import Image from "next/image";
 import "../globals.css";
 import Link from "next/link";
 import { useIdiomas } from "@/hooks/idiomas";
-import imagen from '../../public/programundo2.jpg'
+import imagen from '../../public/programundo2.png'
 
 type Props = {};
 
@@ -33,8 +33,8 @@ export default function About({}: Props) {
           <Link href={"#Contact"} className='xs:w-full md:w-fit justify-center'>
               <button 
                   className="xs:w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-10 rounded-md justify-center " 
-                  aria-label={t.about.buttonMore}>
-                  {t.about.buttonMore}
+                  aria-label={t.about.button}>
+                  {t.about.button}
               </button>
           </Link>
         </div>
