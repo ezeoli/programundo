@@ -44,7 +44,7 @@ export default {
 
   products: {
     title: "NUESTROS TRABAJOS",
-    subtitle: 'Algunos diseños de paginas web',
+    subtitle: 'Algunos diseños de paginas web y desarrollo de aplicativos web',
     paragraph1: "Entendiendo las necesidades únicas de cada cliente, brindamos soluciones personalizadas que se adaptan a sus objetivos y preferencias. Al diversificar nuestro trabajo, nos mantenemos actualizados con las últimas tendencias y tecnologías, brindando soluciones modernas y vanguardistas",
     paragraph2: "Valoramos la accesibilidad y la usabilidad, creando sitios web intuitivos y amigables para el usuario. Nuestros diseños se adaptan a diferentes industrias, superando las expectativas del cliente. Ya sea un diseño elegante o audaz, estamos preparados para ofrecer resultados de alta calidad",
     button: "CONTACTO",

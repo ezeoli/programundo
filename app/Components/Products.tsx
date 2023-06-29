@@ -11,14 +11,14 @@ export default function Products({}: Props) {
 
 
   return (
-    <section id={t.id.products} className=''>
+    <section id={t.id.products} className='p-2 m-2'>
       <div className="p-4 mt-20 md:mt-30 ">
-          <h1 className="text-4xl pt-15 font-bold text-blue-800 text-center">
+          <h2 className="text-4xl pt-15 font-bold text-blue-800 text-center">
               {t.products.title}
-          </h1>
+          </h2><br/>
+          <h1 className="text-2xl text-center">{t.products.subtitle}</h1>
       </div>
-      <div className="flex flex-row xs:flex-col-reverse items-center">
-        <div className="flex flex-wrap md:flex-row items-center justify-around p-2 m-2">
+      <div className="flex flex-wrap md:flex-row items-center justify-around p-2 m-2">
           {t.works.map((b:any)=>(
                               <Link
                                 href={b.href}
@@ -38,12 +38,10 @@ export default function Products({}: Props) {
                               </Link>
                           ))} 
       
-        </div>
-        <div className="flex flex-col p-2 m-2 md:col-span-1 items-center text-lg">
-          <h2 className="m-4 text-2xl">{t.products.subtitle}</h2><br/>
+      </div>
+      <div className="flex flex-col p-2 m-2 items-center text-lg">
           <p>{t.products.paragraph1}</p><br/>
           <p>{t.products.paragraph2}</p><br/>
-        </div>
       </div>
       <Link href={"#Contact"} className="flex justify-center align-center p-2 m-2 ">
               <button 

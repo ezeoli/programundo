@@ -44,7 +44,7 @@ export default {
 
   products: {
     title: "WORKS",
-    subtitle: 'Some websites designs',
+    subtitle: "Some website designs and web application development",
     paragraph1: "Understanding unique client needs, we provide personalized solutions that adapt to their goals and preferences. By diversifying our work, we stay up-to-date with the latest trends and technologies, delivering modern and cutting-edge solutions.",
     paragraph2: "We value accessibility and usability, creating intuitive and user-friendly websites. Our designs adapt to different industries, exceeding client expectations. Whether it's an elegant or bold design, we're prepared to deliver high-quality results. ",
     button: "CONTACT",
