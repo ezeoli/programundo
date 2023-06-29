@@ -18,7 +18,7 @@ export default function Products({}: Props) {
           </h2><br/>
           <h1 className="text-2xl text-center">{t.products.subtitle}</h1>
       </div>
-      <div className="flex flex-wrap md:flex-row items-center justify-around p-2 m-2">
+      <div className="flex flex-wrap md:flex-row items-center justify-around p-2 m-2 ">
           {t.works.map((b:any)=>(
                               <Link
                                 href={b.href}
