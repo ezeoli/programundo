@@ -23,8 +23,8 @@ export default function Welcome({}: Props) {
                     <p>{t.welcome.paragraph1}</p><br/>
                     <p>{t.welcome.paragraph2}</p><br/>
                     <Link href={"#Contact"} className='xs:w-full md:w-fit justify-center'>
-                        <button className="xs:w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-10 rounded-md justify-center " aria-label={t.welcome.buttonContact}>
-                            {t.welcome.buttonContact}
+                        <button className="xs:w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-10 rounded-md justify-center " aria-label={t.welcome.button}>
+                            {t.welcome.button}
                         </button>
                     </Link>
                 </div>

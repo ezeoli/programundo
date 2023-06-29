@@ -3,9 +3,9 @@ import "../globals.css";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useIdiomas } from "@/hooks/idiomas";
-import image1 from '../../public/programundo2.jpg'
-import image2 from '../../public/programundo3.jpg'
-import image3 from '../../public/programundo4.jpg'
+import image1 from '../../public/programundo2.png'
+import image2 from '../../public/programundo3.png'
+import image3 from '../../public/programundo4.png'
 
 
 export default function Carrusel() {
