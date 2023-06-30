@@ -37,7 +37,7 @@ export default function Navbar({}: Props) {
 
   return (
     <React.Fragment>
-      <nav className="w-full bg-gray-500 fixed top-0 left-0 right-0 z-10 shadow-[0_30px_60px_-3px_rgba(0,0,0,0.5)] bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
+      <nav className="w-full bg-gray-500 fixed top-0 left-0 right-0 z-10 shadow-[0_30px_60px_-3px_rgba(0,0,0,0.5)] bg-gradient-to-r from-blue-300 via-indigo-400 to-white-200">
         <div className="justify-between  px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <>
             <div className="flex items-center justify-between py-3 md:py-4 md:block">

@@ -13,9 +13,9 @@ export default function About({}: Props) {
   return (
     <section id={t.id.about}>
       <div className="p-4  mt-20 md:mt-30">
-          <h1 className="text-4xl pt-15 font-bold text-blue-800 text-center">
+          <h2 className="text-3xl md:text-4xl pt-15 font-bold text-blue-800 text-center">
               {t.about.title}
-          </h1>
+          </h2>
       </div>
       <div className="flex xs:flex-col-reverse md:grid md:grid-cols-2 m-2 p-4 items-center">
         <div className="md:col-span-1 items-center md:block xs:hidden">
@@ -27,7 +27,7 @@ export default function About({}: Props) {
         />
         </div>
         <div className="flex flex-col p-2 m-2 md:col-span-1 items-center text-lg">
-          <h2 className="m-4 text-2xl">{t.about.subtitle}</h2><br/>
+          <h3 className="m-4 text-2xl">{t.about.subtitle}</h3><br/>
           <p>{t.about.paragraph1}</p><br/>
           <p>{t.about.paragraph2}</p><br/>
           <Link href={"#Contact"} className='xs:w-full md:w-fit justify-center'>
