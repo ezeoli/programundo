@@ -13,9 +13,9 @@ export default function Welcome({}: Props) {
   return (
         <React.Fragment>
             <div className="p-4 m-2">
-                <h1 className="text-4xl mt-20 md:mt-30 pt-10 font-bold text-blue-800 text-center">
+                <h2 className="text-3xl md:text-4xl mt-20 md:mt-30 pt-10 font-bold text-blue-800 text-center">
                     {t.welcome.title}
-                </h1>
+                </h2>
             </div>
             <div className="flex xs:flex-col-reverse md:grid md:grid-cols-2 m-2 p-4">
                 <div className="flex flex-col p-2 m-4 md:col-span-1 items-center text-lg">

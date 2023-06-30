@@ -13,7 +13,7 @@ export default function Products({}: Props) {
   return (
     <section id={t.id.products} className='p-2 m-2'>
       <div className="p-4 mt-20 md:mt-30 ">
-          <h2 className="text-4xl pt-15 font-bold text-blue-800 text-center">
+          <h2 className="text-3xl md:text-4xl pt-15 font-bold text-blue-800 text-center">
               {t.products.title}
           </h2><br/>
           <h1 className="text-2xl text-center">{t.products.subtitle}</h1>
@@ -43,7 +43,7 @@ export default function Products({}: Props) {
           <p>{t.products.paragraph1}</p><br/>
           <p>{t.products.paragraph2}</p><br/>
       </div>
-      <Link href={"#Contact"} className="flex justify-center align-center p-2 m-2 ">
+      <Link href={"#contact"} className="flex justify-center align-center p-2 m-2 ">
               <button 
                   className=" w-full md:w-fit bg-primary hover:bg-secondary text-white font-bold py-2 px-10 rounded-md" 
                   aria-label={t.products.button}>
