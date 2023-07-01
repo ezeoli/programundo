@@ -20,7 +20,7 @@ export default function Home() {
       <header>
         <Navbar/>
       </header>
-      <main className="bg-gradient-to-r from-blue-200 via-indigo-100 to-white-100">
+      <main className="bg-gradient-to-r from-blue-200 via-indigo-200 to-stone-200">
         <Welcome/><br />
         <About/> <br />
         <Products/><br />
