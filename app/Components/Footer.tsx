@@ -15,7 +15,7 @@ export default function Footer({}: Props) {
  
   return (
     <>
-      <div id="image_footer" className="bg-light px-5">
+      <div id="image_footer" className="bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 px-5">
         <div className="flex flex-wrap pt-24 pb-12 -mx-4">
           <div className="w-full md:w-1/2 lg:w-4/12 px-4 mb-16 lg:mb-0">
             <Link href={`${useRouter().locale}${"/"}`} className="inline-block mb-4">
@@ -37,12 +37,12 @@ export default function Footer({}: Props) {
             id="footer_links_div"
             className="w-full md:w-1/4 lg:w-2/12 px-4 mb-16 lg:mb-0"
           >
-            <h3
+            <h2
               id="footer_links_h3"
               className="mb-5 text-lg font-bold text-gray-900"
             >
             {t.footer.title1}
-            </h3>
+            </h2>
             <ul id="footer_links">
               {t.footer.links1.map((l:any)=>
               <React.Fragment key={l.name}>
@@ -66,12 +66,12 @@ export default function Footer({}: Props) {
             id="footer_services_div"
             className="w-full md:w-1/4 lg:w-2/12 px-4 mb-16 lg:mb-0"
           >
-            <h3
+            <h2
               id="footer_services_h3"
               className="mb-5 text-lg font-bold text-gray-900"
             >
               {t.footer.title2}
-            </h3>
+            </h2>
             <ul id="footer_services">
               {t.footer.links2.map((l) => (
                 <React.Fragment key={l.name}>

@@ -29,17 +29,33 @@ export default {
   welcome: {
     title: "¿Estás buscando un diseñador de paginas web?",
     subtitle: 'Aquí encontrarás el mejor diseño para tu sitio web y para tu E-commerce',
-    paragraph1: "Somos un equipo especializado en diseño de páginas web. Unimos nuestras habilidades individuales y experiencias para ofrecerte soluciones creativas y personalizadas. Ya sea que necesites una página web informativa, una tienda en línea o una plataforma interactiva, trabajaremos contigo en cada etapa del proceso de diseño.",
-    paragraph2: "Nuestra prioridad es tu satisfacción y el éxito de tu negocio. Nos aseguramos de que tu sitio web sea visualmente atractivo, funcional, intuitivo y optimizado. Confía en nosotros para obtener un diseño web profesional, moderno y adaptado a tus necesidades y preferencias.",
+    paragraph1: "¡Bienvenidos a nuestra pagina web! Estamos emocionados de presentarles nuestros servicios y soluciones creativas para llevar su presencia online al siguiente nivel.",
+    paragraph2: "Explora nuestro sitio web para obtener más información sobre nuestro equipo, proyectos anteriores y los servicios que ofrecemos. Estamos ansiosos por colaborar con vos y ayudarte a destacarte en el mundo digital. ¡Contáctanos hoy mismo y permítenos hacer realidad tus ideas y objetivos de diseño web!",
+    button: "CONTACTO"
   },
 
   about: {
-    title: "Acerca de nosotros",
-    image: "/programundo2.jpg",
-    description:
-      "Esta es la sección Acerca de. Cuidémonos del dolor en sí, lo seguirá la élite adipiscente. El dolor de las cosas pasará, el vuelo del presente será más duro, se suavizarán y el dolor será seguido por algunos, y tiempos similares son cegados por el arquitecto, en el momento del nacimiento abriré el todo",
-    buttonContact: "CONTACTO",
+    title: "¿ QUIENES SOMOS ?",
+    subtitle: 'Somos un equipo especializado en diseño de páginas web. ',
+    paragraph1: "Unimos nuestras habilidades individuales y experiencias para ofrecerte soluciones creativas y personalizadas. Ya sea que necesites una página web informativa, una tienda en línea o una plataforma interactiva, trabajaremos contigo en cada etapa del proceso de diseño.",
+    paragraph2: "Nuestra prioridad es tu satisfacción y el éxito de tu negocio. Nos aseguramos de que tu sitio web sea visualmente atractivo, funcional, intuitivo y optimizado. Confía en nosotros para obtener un diseño web profesional, moderno y adaptado a tus necesidades y preferencias.",
+    button: "MAS...",
   },
+
+  products: {
+    title: "NUESTROS TRABAJOS",
+    subtitle: 'Algunos diseños de paginas web y desarrollo de aplicativos web',
+    paragraph1: "Entendiendo las necesidades únicas de cada cliente, brindamos soluciones personalizadas que se adaptan a sus objetivos y preferencias. Al diversificar nuestro trabajo, nos mantenemos actualizados con las últimas tendencias y tecnologías, brindando soluciones modernas y vanguardistas",
+    paragraph2: "Valoramos la accesibilidad y la usabilidad, creando sitios web intuitivos y amigables para el usuario. Nuestros diseños se adaptan a diferentes industrias, superando las expectativas del cliente. Ya sea un diseño elegante o audaz, estamos preparados para ofrecer resultados de alta calidad",
+    button: "CONTACTO",
+  },
+
+  works:[
+    {href:'https://pf-07-e-commerce-front.vercel.app/sneakers', button: "SNEAKERS", imagen:'/Home.png'},
+    {href:'https://gtg-henry-pi-client.vercel.app/countries', button: "PAISES", imagen:'/countries.png'},
+    {href:'/seo', button: "SEO", imagen:'/Home.png'},
+    {href:'/ecommerce', button: "TIENDA ONLINE", imagen:'/Home.png'},
+  ],
 
   contact: {
     title: "¿Quieres tu propio sitio web?",

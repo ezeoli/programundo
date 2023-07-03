@@ -3,9 +3,9 @@ import "../globals.css";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useIdiomas } from "@/hooks/idiomas";
-import image1 from '../../public/programundo2.jpg'
-import image2 from '../../public/programundo3.jpg'
-import image3 from '../../public/programundo4.jpg'
+import image1 from '../../public/programundo2.png'
+import image2 from '../../public/programundo3.png'
+import image3 from '../../public/programundo4.png'
 
 
 export default function Carrusel() {
@@ -74,7 +74,7 @@ export default function Carrusel() {
           ))}
         </div>
 
-        <div className="absolute bottom-0 left-0 w-full h-8 bg-gray-900 bg-opacity-50">
+        <div className="absolute bottom-0 rounded-lg left-0 w-full h-8 bg-gray-900 bg-opacity-50">
           <ul className="flex justify-center space-x-2">
             {images.map((_, index) => (
               <li

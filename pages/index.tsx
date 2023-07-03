@@ -6,7 +6,6 @@ import Products from "../app/Components/Products";
 import Contact from "../app/Components/Contact";
 import About from "../app/Components/About";
 import Footer from "../app/Components/Footer";
-import Carrusel from "../app/Components/Carrusel";
 import ButtonWsp from "../app/Components/ButtonWsp";
 import Welcome from "@/app/Components/Welcome";
 import {useIdiomas} from "@/hooks/idiomas";
@@ -21,7 +20,11 @@ export default function Home() {
       <header>
         <Navbar/>
       </header>
-      <main className="">
+
+      <main className="bg-gradient-to-r from-blue-200 via-indigo-200 to-stone-300">
+
+
+
         <Welcome/><br />
         <About/> <br />
         <Products/><br />
