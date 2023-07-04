@@ -100,7 +100,7 @@ export default function Navbar({}: Props) {
                     onClick={() => setServicesMenuOpen(!servicesMenuOpen)}>
                     {t.service} <SlArrowDown/>
                   </a>
-                   <div className="z-30 rounded-lg group-hover:block dropdown-menu relative dropdown-menu md:absolute hidden h-auto mt-2 left-0 right-0  md:mt-0 '
+                   (<div className="z-30 rounded-lg group-hover:block dropdown-menu relative dropdown-menu md:absolute hidden h-auto mt-2 left-0 right-0  md:mt-0 '
                     } " >
                     <ul className="top-2 w-48 md:bg-gray-500 shadow py-2 rounded-xl">
                         {t.services.map((b:any)=>(
@@ -118,7 +118,7 @@ export default function Navbar({}: Props) {
                           </Link>
                         ))}
                     </ul>
-                  </div>
+                  </div>)
                 </li>
                 {t.navbar.map((b: any) => (
                   <Link

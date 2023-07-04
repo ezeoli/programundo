@@ -32,7 +32,7 @@ export default function Navbar({}: Props) {
       />
     </button>
   );
-  const [servicesMenuOpen, setServicesMenuOpen] = useState(false);
+
   const [navbar, setNavbar] = useState(false);
   const handleToggleNavbar = () => { 
     setNavbar(!navbar);
@@ -91,18 +91,16 @@ export default function Navbar({}: Props) {
           <div >
             <div
               className={`flex-1  justify-self-center pb-3 mt-6 md:block md:pb-0 md:mt-0 
-              ${navbar ? "p-12 md:p-0 block h-auto " : "hidden "}  `}
+              ${navbar ? "p-12 md:p-0 block h-96" : "hidden "}  `}
             >
-              <ul className="flex flex-col md:flex-row h-screen md:h-auto md:justify-center items-center  ">
+              <ul className="grid md:flex-row h-screen md:h-auto md:justify-center items-center  ">
                 <li className="group relative dropdown">
                   <a
-                    className=" pb-2 text-xl text-white py-2 md:px-4 text-center  md:hover:bg-transparent hover:text-black flex gap-2 items-center" 
-                    onClick={() => setServicesMenuOpen(!servicesMenuOpen)}>
+                    className=" pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black flex gap-2 items-center" >
                     {t.service} <SlArrowDown/>
                   </a>
-                   <div className="z-30 rounded-lg group-hover:block dropdown-menu relative dropdown-menu md:absolute hidden h-auto mt-2 left-0 right-0  md:mt-0 '
-                    } " >
-                    <ul className="top-2 w-48 md:bg-gray-500 shadow py-2 rounded-xl">
+                  <div className="z-30 rounded-lg group-hover:block dropdown-menu absolute hidden h-auto mt-2 left-0 right-0  md:mt-0" >
+                    <ul className="top-2 w-48 bg-gray-500 shadow py-2 rounded-xl">
                         {t.services.map((b:any)=>(
                           <Link
                             href={b.href}
