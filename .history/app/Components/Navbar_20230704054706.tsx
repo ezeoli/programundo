@@ -6,7 +6,6 @@ import { SlArrowDown } from 'react-icons/sl';
 import { useIdiomas } from "@/hooks/idiomas";
 import { useRouter } from "next/router";
 import logo from "../../public/Logo.png";
-import { Dropdown } from "flowbite-react";
 
 type Props = {};
 
@@ -41,9 +40,6 @@ export default function Navbar({}: Props) {
 
   return (
     <React.Fragment>
-        
-
-
       <nav className="w-full bg-gray-500 fixed top-0 left-0 right-0 z-10 shadow-[0_30px_60px_-3px_rgba(0,0,0,0.5)] bg-gradient-to-r from-blue-300 via-indigo-400 to-white-200">
         <div className="justify-between  px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <>
@@ -92,18 +88,14 @@ export default function Navbar({}: Props) {
               </div>
             </div>
           </>
-         
           <div >
             <div
               className={`flex-1  justify-self-center pb-3 mt-6 md:block md:pb-0 md:mt-0 
               ${navbar ? "p-12 md:p-0 block h-auto " : "hidden "}  `}
-            >  
-            
-            
-
+            >
               <ul className="flex flex-col md:flex-row h-screen md:h-auto md:justify-center items-center  ">
-                <li  className="group relative dropdown">
-                  <a data-dropdown-toggle="dropdown"
+                <li className="group relative dropdown">
+                  <a
                     className=" pb-2 text-xl text-white py-2 md:px-4 text-center  md:hover:bg-transparent hover:text-black flex gap-2 items-center" 
                     onClick={() => setServicesMenuOpen(!servicesMenuOpen)}>
                     {t.service} <SlArrowDown/>

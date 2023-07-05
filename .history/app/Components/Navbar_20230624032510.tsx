@@ -6,7 +6,6 @@ import { SlArrowDown } from 'react-icons/sl';
 import { useIdiomas } from "@/hooks/idiomas";
 import { useRouter } from "next/router";
 import logo from "../../public/Logo.png";
-import { Dropdown } from "flowbite-react";
 
 type Props = {};
 
@@ -17,9 +16,8 @@ export default function Navbar({}: Props) {
   const handleLang = () => {
     let t = router.locale === "es" ? "en" : "es";
     router.push(router.pathname, router.pathname, { locale: t });
-    
+    setNavbar(!navbar);
   };
-
 
   const lang = (
     <button onClick={handleLang}>
@@ -33,19 +31,13 @@ export default function Navbar({}: Props) {
       />
     </button>
   );
-  const [servicesMenuOpen, setServicesMenuOpen] = useState(false);
+
   const [navbar, setNavbar] = useState(false);
-  const handleToggleNavbar = () => { 
-    setNavbar(!navbar);
-  };
 
   return (
     <React.Fragment>
-        
-
-
-      <nav className="w-full bg-gray-500 fixed top-0 left-0 right-0 z-10 shadow-[0_30px_60px_-3px_rgba(0,0,0,0.5)] bg-gradient-to-r from-blue-300 via-indigo-400 to-white-200">
-        <div className="justify-between  px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+      <nav className="w-full bg-gray-500 fixed top-0 left-0 right-0 z-10 shadow-[0_30px_60px_-3px_rgba(0,0,0,0.5)]">
+        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <>
             <div className="flex items-center justify-between py-3 md:py-4 md:block">
               <div className="flex flex-col align-center items-center">
@@ -60,14 +52,12 @@ export default function Navbar({}: Props) {
                   PROGRAMUNDO
                 </h2>
               </div>
-             
-              <div> 
-                
+              <div>
                 <div className="md:hidden">
-                 {lang}
+                  {lang}
                   <button
                     className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                    onClick={handleToggleNavbar}
+                    onClick={() => setNavbar(!navbar)}
                   >
                     {navbar ? (
                       <Image
@@ -92,29 +82,23 @@ export default function Navbar({}: Props) {
               </div>
             </div>
           </>
-         
-          <div >
+          <div>
             <div
-              className={`flex-1  justify-self-center pb-3 mt-6 md:block md:pb-0 md:mt-0 
-              ${navbar ? "p-12 md:p-0 block h-auto " : "hidden "}  `}
-            >  
-            
-            
-
-              <ul className="flex flex-col md:flex-row h-screen md:h-auto md:justify-center items-center  ">
-                <li  className="group relative dropdown">
-                  <a data-dropdown-toggle="dropdown"
-                    className=" pb-2 text-xl text-white py-2 md:px-4 text-center  md:hover:bg-transparent hover:text-black flex gap-2 items-center" 
-                    onClick={() => setServicesMenuOpen(!servicesMenuOpen)}>
+              className={`flex-1 justify-self-center pb-3 mt-6 md:block md:pb-0 md:mt-0 
+              ${navbar ? "p-12 md:p-0 block" : "hidden"}`}
+            >
+              <ul className="h-screen md:h-auto items-center justify-center md:flex">
+                <li className="group relative dropdown">
+                  <a
+                    className="pb-2 text-xl text-white py-2 md:px-4 text-center hover:bg-white md:hover:bg-transparent hover:text-black flex gap-2 items-center" >
                     {t.service} <SlArrowDown/>
                   </a>
-                   <div className="z-30 rounded-lg group-hover:block dropdown-menu relative dropdown-menu md:absolute hidden h-auto mt-2 left-0 right-0  md:mt-0 '
-                    } " >
-                    <ul className="top-2 w-48 md:bg-gray-500 shadow py-2 rounded-xl">
+                  <div className="z-30 rounded-lg group-hover:block dropdown-menu absolute hidden h-auto" >
+                    <ul className="top-2 w-48 bg-gray-500 shadow py-2 rounded-xl">
                         {t.services.map((b:any)=>(
                           <Link
                             href={b.href}
-                            onClick={handleToggleNavbar}
+                            onClick={() => setNavbar(!navbar)}
                             key={b.button}
                             className= "block text-white font-normal text-base hover:text-white cursor-pointer"
                           >
@@ -131,7 +115,7 @@ export default function Navbar({}: Props) {
                 {t.navbar.map((b: any) => (
                   <Link
                     href={b.href}
-                    onClick={handleToggleNavbar}
+                    onClick={() => setNavbar(!navbar)}
                     key={b.button}
                   >
                     <li
@@ -142,7 +126,7 @@ export default function Navbar({}: Props) {
                     </li>
                   </Link>
                 ))}
-                <div className="xs:hidden md:block align-middle	">
+                <div className="xs:hidden lg:block items-center">
                 {lang}
                 </div>
               </ul>
