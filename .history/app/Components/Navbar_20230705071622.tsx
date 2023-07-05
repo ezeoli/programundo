@@ -92,13 +92,14 @@ export default function Navbar({}: Props) {
               </div>
             </div>
           </>
-         
+          
           <div >
             <div
               className={`flex-1  justify-self-center pb-3 mt-6 md:block md:pb-0 md:mt-0 
               ${navbar ? "p-12 md:p-0 block h-auto " : "hidden "}  `}
             >  
             
+            </div>
             
 
               <ul className="flex flex-col md:flex-row h-screen md:h-auto md:justify-center items-center  ">
