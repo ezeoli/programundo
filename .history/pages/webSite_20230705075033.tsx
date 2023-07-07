@@ -24,7 +24,7 @@ export default function webSite({}: Props) {
       <div className="grid lg:grid-cols-2 lg:items-center gap-14 lg:gap-16 xl:gap-44 mt-20">
         <Image
           src={t.webSite.image}
-          priority={true}   
+
           width={200}
           height={200}
           alt=""
